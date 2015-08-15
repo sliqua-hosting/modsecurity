@@ -9,6 +9,7 @@ yum install http://updates.atomicorp.com/channels/atomic/centos/6/x86_64/RPMS/mo
 rm -rf /etc/httpd/modsecurity.d/
 git clone https://github.com/sliqua-hosting/modsecurity.git /etc/httpd/modsecurity.d
 ln -s /etc/httpd/modsecurity.d/conf.d/waf.conf /etc/httpd/conf.d/waf.conf
+service httpd condrestart
 ```
 
 ### CentOS 5
@@ -17,6 +18,7 @@ yum install http://updates.atomicorp.com/channels/atomic/centos/5/x86_64/RPMS/mo
 rm -rf /etc/httpd/modsecurity.d/
 git clone https://github.com/sliqua-hosting/modsecurity.git /etc/httpd/modsecurity.d
 ln -s /etc/httpd/modsecurity.d/conf.d/waf.conf /etc/httpd/conf.d/waf.conf
+service httpd condrestart
 ```
 
 ## Credits
