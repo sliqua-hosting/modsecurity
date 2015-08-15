@@ -1,5 +1,5 @@
 #!/bin/bash
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:$PATH
 cd /etc/httpd/modsecurity.d && git pull >> /dev/null 2>&1
-cd /etc/httpd/modsecurity.d && git reset --hard 
+cd /etc/httpd/modsecurity.d && git reset --hard >> /dev/null 2>&1
 service httpd condrestart >> /dev/null 2>&1
