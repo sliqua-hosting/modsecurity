@@ -9,7 +9,7 @@ yum install http://updates.atomicorp.com/channels/atomic/centos/7/x86_64/RPMS/mo
 rm -rf /etc/httpd/modsecurity.d/
 git clone https://github.com/sliqua-hosting/modsecurity.git /etc/httpd/modsecurity.d
 ln -s /etc/httpd/modsecurity.d/conf.d/waf.conf /etc/httpd/conf.d/waf.conf
-cp /etc/httpd/modsecurity.d/cron/waf /etc/cron.daily/waf && chmod +x /etc/cron.daily/waf
+cp /etc/httpd/modsecurity.d/cron/waf /etc/cron.daily/waf
 service httpd condrestart
 ```
 
@@ -19,7 +19,7 @@ yum install http://updates.atomicorp.com/channels/atomic/centos/6/x86_64/RPMS/mo
 rm -rf /etc/httpd/modsecurity.d/
 git clone https://github.com/sliqua-hosting/modsecurity.git /etc/httpd/modsecurity.d
 ln -s /etc/httpd/modsecurity.d/conf.d/waf.conf /etc/httpd/conf.d/waf.conf
-ln -s /etc/httpd/modsecurity.d/cron/waf /etc/cron.daily/waf
+cp /etc/httpd/modsecurity.d/cron/waf /etc/cron.daily/waf 
 service httpd condrestart
 ```
 
@@ -29,7 +29,7 @@ yum install http://updates.atomicorp.com/channels/atomic/centos/5/x86_64/RPMS/mo
 rm -rf /etc/httpd/modsecurity.d/
 git clone https://github.com/sliqua-hosting/modsecurity.git /etc/httpd/modsecurity.d
 ln -s /etc/httpd/modsecurity.d/conf.d/waf.conf /etc/httpd/conf.d/waf.conf
-ln -s /etc/httpd/modsecurity.d/cron/waf /etc/cron.daily/waf
+cp /etc/httpd/modsecurity.d/cron/waf /etc/cron.daily/waf 
 service httpd condrestart
 ```
 
