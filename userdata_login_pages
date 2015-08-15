@@ -1,0 +1,5 @@
+# Put your login scripts and pathes here. All of them would be protected by bruteforce protection rules.
+wp-login.php
+login.php
+admin.php
+dologin.php
