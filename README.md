@@ -5,7 +5,7 @@ mod_security rules for Sliqua Server Environment
 
 ### CentOS 6 / CloudLinux 6
 ```
-rpm -ivh http://updates.atomicorp.com/channels/atomic/centos/6/x86_64/RPMS/mod_security-2.9.0-25.el6.art.x86_64.rpm
+yum install http://updates.atomicorp.com/channels/atomic/centos/6/x86_64/RPMS/mod_security-2.9.0-25.el6.art.x86_64.rpm
 rm -rf /etc/httpd/modsecurity.d/
 git clone https://github.com/sliqua-hosting/modsecurity.git /etc/httpd/modsecurity.d
 ln -s /etc/httpd/modsecurity.d/conf.d/waf.conf /etc/httpd/conf.d/waf.conf
@@ -13,7 +13,7 @@ ln -s /etc/httpd/modsecurity.d/conf.d/waf.conf /etc/httpd/conf.d/waf.conf
 
 ### CentOS 5
 ```
-http://updates.atomicorp.com/channels/atomic/centos/5/x86_64/RPMS/mod_security-2.8.0-24.el5.art.x86_64.rpm
+yum install http://updates.atomicorp.com/channels/atomic/centos/5/x86_64/RPMS/mod_security-2.8.0-24.el5.art.x86_64.rpm
 rm -rf /etc/httpd/modsecurity.d/
 git clone https://github.com/sliqua-hosting/modsecurity.git /etc/httpd/modsecurity.d
 ln -s /etc/httpd/modsecurity.d/conf.d/waf.conf /etc/httpd/conf.d/waf.conf
