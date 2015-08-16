@@ -5,7 +5,8 @@ mod_security rules for Sliqua Server Environment
 
 ### CentOS 7
 ```
-yum install http://updates.atomicorp.com/channels/atomic/centos/7/x86_64/RPMS/mod_security-2.9.0-25.el7.art.x86_64.rpm
+yum -y install git
+yum -y install http://updates.atomicorp.com/channels/atomic/centos/7/x86_64/RPMS/mod_security-2.9.0-25.el7.art.x86_64.rpm
 rm -rf /etc/httpd/conf.d/mod_security.conf
 rm -rf /etc/httpd/modsecurity.d/
 git clone https://github.com/sliqua-hosting/modsecurity.git /etc/httpd/modsecurity.d
@@ -16,7 +17,8 @@ service httpd condrestart
 
 ### CentOS 6 / CloudLinux 6
 ```
-yum install http://updates.atomicorp.com/channels/atomic/centos/6/x86_64/RPMS/mod_security-2.9.0-25.el6.art.x86_64.rpm
+yum -y install git
+yum -y install http://updates.atomicorp.com/channels/atomic/centos/6/x86_64/RPMS/mod_security-2.9.0-25.el6.art.x86_64.rpm
 rm -rf /etc/httpd/modsecurity.d/
 rm -rf /etc/httpd/conf.d/mod_security.conf
 git clone https://github.com/sliqua-hosting/modsecurity.git /etc/httpd/modsecurity.d
@@ -27,6 +29,7 @@ service httpd condrestart
 
 ### CentOS 5
 ```
+yum -y install git
 rpm -ivh http://updates.atomicorp.com/channels/atomic/centos/5/x86_64/RPMS/mod_security-2.8.0-24.el5.art.x86_64.rpm
 rm -rf /etc/httpd/modsecurity.d/
 rm -rf /etc/httpd/conf.d/mod_security.conf
