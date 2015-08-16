@@ -43,8 +43,8 @@ service httpd condrestart
 
 ## Credits
 
-Copyright 2015 Sliqua Enterprise Hosting, Inc.
-Copyright 2015 Comodo Security Solutions
+Copyright 2015 Sliqua Enterprise Hosting, Inc. (https://www.sliqua.com)
+Copyright 2015 Comodo Security Solutions (http://waf.comodo.com)
 
 Originally based on the OWASP Foundation's Core Rule Set (CRS)
 
