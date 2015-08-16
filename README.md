@@ -1,5 +1,7 @@
 # modsecurity
-mod_security rules for Sliqua Server Environment
+
+mod_security ruleset based on the Comodo Web Application Firewall and OWASP ModSecurity Core Rule Set (CRS) with modifications to prevent false positives.
+This ruleset has also been stripped down in order to provide support for CentOS 5,6,7.
 
 ## Installation
 
@@ -40,6 +42,10 @@ service httpd condrestart
 ```
 
 ## Credits
-Based on Comodo Web Application Firewall with modifications due to False Positives.
+
+Copyright 2015 Sliqua Enterprise Hosting, Inc.
+Copyright 2015 Comodo Security Solutions
+
+Originally based on the OWASP Foundation's Core Rule Set (CRS)
 
 Distributed under the Apache License, see LICENSE for more information.
