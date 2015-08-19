@@ -464,18 +464,20 @@ groups:
     description: Joomla! components protection
     status: 1
   WordPress:
-    rule_count: 3
+    rule_count: 5
     rule_inactive_list: {}
     rule_active_list:
       220380: 0
       240020: 0
       240021: 0
+      225010: 0
+      225011: 0
     category: Apps
     default_status: 1
     description: WordPress protection
     status: 1
   WPPlugin:
-    rule_count: 283
+    rule_count: 286
     rule_inactive_list: {}
     rule_active_list:
       220200: 0
@@ -761,6 +763,9 @@ groups:
       226840: 0
       226850: 0
       210110: 0
+      226860: 0
+      226870: 0
+      225020: 0
     category: Apps
     default_status: 1
     description: WordPress Plugins protection
@@ -787,7 +792,7 @@ groups:
     description: Drupal protection
     status: 1
   OtherApps:
-    rule_count: 204
+    rule_count: 207
     rule_inactive_list: {}
     rule_active_list:
       220010: 0
@@ -994,6 +999,9 @@ groups:
       240260: 0
       240261: 0
       240262: 0
+      240270: 0
+      240271: 0
+      240280: 0
     category: Apps
     default_status: 1
     description: Other apps protection
@@ -2140,6 +2148,18 @@ rules:
     file: categories.conf
     status: 1
   240021:
+    default_status: 1
+    description: ''
+    group: WordPress
+    file: categories.conf
+    status: 1
+  225010:
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in WordPress before 4.2.1 (CVE-2015-3440)'
+    group: WordPress
+    file: categories.conf
+    status: 1
+  225011:
     default_status: 1
     description: ''
     group: WordPress
@@ -3994,6 +4014,27 @@ rules:
     group: WPPlugin
     file: categories.conf
     status: 1
+  226860:
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in the WP Photo Album Plus
+      (aka WPPA) plugin before 6.1.3 for WordPress (CVE-2015-3647)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  226870:
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Job Manager plugin 0.7.22 and
+      earlier for WordPress (CVE-2015-2321)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  225020:
+    default_status: 1
+    description: 'COMODO WAF: Directory traversal vulnerability in the Easy2Map plugin
+      before 1.2.5 for WordPress (CVE-2015-4616)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
   222040:
     default_status: 1
     description: 'COMODO WAF: WHMCS SQL injection detected'
@@ -5288,6 +5329,26 @@ rules:
   240262:
     default_status: 1
     description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  240270:
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in Domain Technologie Control
+      (DTC) before 0.32.11 (CVE-2011-5276) and Directory traversal vulnerability in
+      Domain Technologie Control (DTC) before 0.34.1 (CVE-2011-5273)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  240271:
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  240280:
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in Cacti before 0.8.8e (CVE-2015-4634)'
     group: OtherApps
     file: categories.conf
     status: 1
