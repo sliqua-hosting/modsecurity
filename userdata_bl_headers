@@ -1,0 +1,6 @@
+# Put your headers blacklist here
+/Proxy-Connection/
+/Lock-Token/
+/Content-Range/
+/Translate/
+/if/
