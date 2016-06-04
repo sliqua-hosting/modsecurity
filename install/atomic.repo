@@ -1,0 +1,7 @@
+[atomic]
+name=Atomic - RedHat Enterprise $releasever
+baseurl=http://updates.atomicorp.com/channels/atomic/centos/$releasever/$basearch/
+priority=1
+gpgcheck=1
+enabled=0
+

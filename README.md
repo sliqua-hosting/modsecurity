@@ -8,15 +8,7 @@ This ruleset has also been stripped down in order to provide support for CentOS 
 
 ### CentOS 7
 ```
-yum -y install git
-yum -y install http://updates.atomicorp.com/channels/atomic/centos/7/x86_64/RPMS/mod_security-2.9.0-25.el7.art.x86_64.rpm
-rm -rf /etc/httpd/conf.d/mod_security.conf
-rm -rf /etc/httpd/conf.d/00_mod_security.conf && touch rm -rf /etc/httpd/conf.d/00_mod_security.conf
-rm -rf /etc/httpd/modsecurity.d/
-git clone https://github.com/sliqua-hosting/modsecurity.git /etc/httpd/modsecurity.d
-ln -s /etc/httpd/modsecurity.d/conf.d/waf.conf /etc/httpd/conf.d/waf.conf
-cp /etc/httpd/modsecurity.d/cron/waf /etc/cron.daily/waf
-service httpd condrestart
+curl -sL https://raw.githubusercontent.com/sliqua-hosting/modsecurity/install/install.sh | bash
 ```
 
 ### CentOS 6 / CloudLinux 6
@@ -28,7 +20,7 @@ rm -rf /etc/httpd/conf.d/mod_security.conf
 rm -rf /etc/httpd/conf.d/00_mod_security.conf && touch rm -rf /etc/httpd/conf.d/00_mod_security.conf
 git clone https://github.com/sliqua-hosting/modsecurity.git /etc/httpd/modsecurity.d
 ln -s /etc/httpd/modsecurity.d/conf.d/waf.conf /etc/httpd/conf.d/waf.conf
-cp /etc/httpd/modsecurity.d/cron/waf /etc/cron.daily/waf 
+cp /etc/httpd/modsecurity.d/cron/waf /etc/cron.daily/waf
 service httpd condrestart
 ```
 
@@ -41,7 +33,7 @@ rm -rf /etc/httpd/conf.d/mod_security.conf
 rm -rf /etc/httpd/conf.d/00_mod_security.conf && touch rm -rf /etc/httpd/conf.d/00_mod_security.conf
 git clone https://github.com/sliqua-hosting/modsecurity.git /etc/httpd/modsecurity.d
 ln -s /etc/httpd/modsecurity.d/conf.d/waf.conf /etc/httpd/conf.d/waf.conf
-cp /etc/httpd/modsecurity.d/cron/waf /etc/cron.daily/waf 
+cp /etc/httpd/modsecurity.d/cron/waf /etc/cron.daily/waf
 service httpd condrestart
 ```
 
