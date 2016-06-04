@@ -8,7 +8,8 @@ This ruleset has also been stripped down in order to provide support for CentOS 
 
 ### CentOS 7
 ```
-curl -sL https://raw.githubusercontent.com/sliqua-hosting/modsecurity/install/install.sh | bash
+curl -sL https://raw.githubusercontent.com/sliqua-hosting/modsecurity/master/install/install.sh | bash
+service httpd restart
 ```
 
 ### CentOS 6 / CloudLinux 6
