@@ -2,4 +2,5 @@
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:$PATH
 cd /etc/httpd/modsecurity.d && git pull >> /dev/null 2>&1
 cd /etc/httpd/modsecurity.d && git reset --hard >> /dev/null 2>&1
+yum --enablerepo="atomic" -y update mod_security
 service httpd condrestart >> /dev/null 2>&1
