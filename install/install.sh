@@ -1,4 +1,3 @@
-#/bin/bash
 yum -y install git
 echo -n "Installing the Atomic GPG keys: "
 if [ ! -f RPM-GPG-KEY.art.txt ]; then
