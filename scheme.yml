@@ -113,8 +113,8 @@ groups:
     rule_active_list: {}
     status: 1
   Generic:
-    rule_count: 18
-    rule_parent_count: 17
+    rule_count: 22
+    rule_parent_count: 19
     rule_inactive_list: {}
     rule_active_list:
       211000: 0
@@ -134,7 +134,11 @@ groups:
       221260: 0
       210100: 0
       210101: 0
-      210190: 0
+      210470: 0
+      210480: 0
+      210481: 0
+      210490: 0
+      210491: 0
     category: Global
     default_status: 1
     description: Generic protection
@@ -203,14 +207,17 @@ groups:
     description: Access backdoor/trojans possibly injected
     status: 1
   Other:
-    rule_count: 4
-    rule_parent_count: 4
+    rule_count: 7
+    rule_parent_count: 7
     rule_inactive_list: {}
     rule_active_list:
       211020: 0
       211030: 0
       211050: 0
       220130: 0
+      215030: 0
+      215040: 0
+      215050: 0
     category: Global
     default_status: 1
     description: Various checks without group
@@ -239,8 +246,8 @@ groups:
     description: Bruteforce protection
     status: 1
   HTTP:
-    rule_count: 8
-    rule_parent_count: 8
+    rule_count: 9
+    rule_parent_count: 9
     rule_inactive_list: {}
     rule_active_list:
       210700: 0
@@ -251,6 +258,7 @@ groups:
       211070: 0
       211080: 0
       211090: 0
+      217010: 0
     category: HTTP
     default_status: 1
     description: Generic HTTP protection
@@ -269,8 +277,8 @@ groups:
     description: Denial-of-service attacks protection
     status: 1
   Protocol:
-    rule_count: 18
-    rule_parent_count: 17
+    rule_count: 19
+    rule_parent_count: 18
     rule_inactive_list: {}
     rule_active_list:
       210210: 0
@@ -291,6 +299,7 @@ groups:
       210400: 0
       210410: 0
       210420: 0
+      217200: 0
     category: HTTP
     default_status: 1
     description: Detecting protocol violations
@@ -418,12 +427,13 @@ groups:
     description: Checking points
     status: 1
   PHPGen:
-    rule_count: 2
+    rule_count: 3
     rule_parent_count: 2
     rule_inactive_list: {}
     rule_active_list:
       220000: 0
       220030: 0
+      220031: 0
     category: PHP
     default_status: 1
     description: Generic PHP protection
@@ -453,8 +463,8 @@ groups:
     description: SQL Injection protection
     status: 1
   Joomla:
-    rule_count: 6
-    rule_parent_count: 5
+    rule_count: 7
+    rule_parent_count: 7
     rule_inactive_list: {}
     rule_active_list:
       220240: 0
@@ -462,14 +472,15 @@ groups:
       240000: 0
       221010: 0
       222390: 0
-      222391: 0
+      222510: 0
+      222520: 0
     category: Apps
     default_status: 1
     description: Joomla! protection
     status: 1
   JComponent:
-    rule_count: 20
-    rule_parent_count: 11
+    rule_count: 27
+    rule_parent_count: 19
     rule_inactive_list: {}
     rule_active_list:
       220460: 0
@@ -477,7 +488,6 @@ groups:
       220470: 0
       220520: 0
       220680: 0
-      220681: 0
       220730: 0
       220731: 0
       220890: 0
@@ -486,37 +496,53 @@ groups:
       240031: 0
       240032: 0
       240010: 0
-      240011: 0
       222370: 0
       222371: 0
       222380: 0
       222401: 0
       222402: 0
+      222410: 0
+      222420: 0
+      222441: 0
+      222460: 0
+      222470: 0
+      222480: 0
+      222490: 0
+      222530: 0
+      222540: 0
     category: Apps
     default_status: 1
     description: Joomla! components protection
     status: 1
   WordPress:
-    rule_count: 7
-    rule_parent_count: 4
+    rule_count: 14
+    rule_parent_count: 10
     rule_inactive_list: {}
     rule_active_list:
       240020: 0
-      240021: 0
+      240022: 0
       225010: 0
       225011: 0
       225030: 0
       225031: 0
       225040: 0
+      225080: 0
+      225120: 0
+      225100: 0
+      225110: 0
+      225140: 0
+      225141: 0
+      225150: 0
     category: Apps
     default_status: 1
     description: WordPress protection
     status: 1
   WPPlugin:
-    rule_count: 464
-    rule_parent_count: 323
+    rule_count: 526
+    rule_parent_count: 415
     rule_inactive_list: {}
     rule_active_list:
+      210460: 0
       220200: 0
       220210: 0
       220211: 0
@@ -693,8 +719,6 @@ groups:
       226230: 0
       226240: 0
       226250: 0
-      226251: 0
-      226252: 0
       226260: 0
       226261: 0
       226270: 0
@@ -706,10 +730,6 @@ groups:
       226320: 0
       226321: 0
       226322: 0
-      226323: 0
-      226324: 0
-      226325: 0
-      226326: 0
       226330: 0
       226340: 0
       226350: 0
@@ -719,16 +739,13 @@ groups:
       226380: 0
       226390: 0
       226391: 0
-      226392: 0
       226400: 0
       226410: 0
       226411: 0
       226420: 0
       226421: 0
-      226422: 0
       226430: 0
       226431: 0
-      226432: 0
       226440: 0
       226450: 0
       226460: 0
@@ -739,21 +756,18 @@ groups:
       226474: 0
       226480: 0
       226481: 0
-      226490: 0
       226491: 0
       226492: 0
       226500: 0
       226501: 0
       226510: 0
       226520: 0
-      226530: 0
       226531: 0
       226532: 0
       226540: 0
       226550: 0
       226560: 0
       226561: 0
-      226562: 0
       226570: 0
       226580: 0
       226581: 0
@@ -767,7 +781,6 @@ groups:
       226632: 0
       226640: 0
       226641: 0
-      226642: 0
       226650: 0
       226651: 0
       226660: 0
@@ -786,7 +799,6 @@ groups:
       226730: 0
       226740: 0
       226741: 0
-      226742: 0
       226750: 0
       226760: 0
       226770: 0
@@ -814,13 +826,11 @@ groups:
       226933: 0
       226934: 0
       226940: 0
-      226941: 0
       226950: 0
       226960: 0
       226970: 0
       226980: 0
       226990: 0
-      226991: 0
       227000: 0
       227010: 0
       227020: 0
@@ -850,16 +860,14 @@ groups:
       227210: 0
       227220: 0
       227230: 0
-      227250: 0
-      227251: 0
-      227252: 0
+      227260: 0
+      227261: 0
       227270: 0
       227280: 0
       227290: 0
       227291: 0
       227310: 0
       227311: 0
-      227312: 0
       227320: 0
       227330: 0
       227340: 0
@@ -881,18 +889,15 @@ groups:
       227520: 0
       227531: 0
       227532: 0
-      227533: 0
       227540: 0
       227541: 0
       227551: 0
       227552: 0
-      227553: 0
       227561: 0
       227562: 0
       227563: 0
       210150: 0
       210151: 0
-      210152: 0
       227570: 0
       227580: 0
       227590: 0
@@ -910,20 +915,15 @@ groups:
       227690: 0
       227700: 0
       227701: 0
-      227702: 0
       227710: 0
       227720: 0
       227721: 0
-      227722: 0
       227730: 0
       227731: 0
-      227732: 0
       227740: 0
       227741: 0
-      227742: 0
       227750: 0
       227751: 0
-      227752: 0
       227760: 0
       227780: 0
       227790: 0
@@ -931,23 +931,19 @@ groups:
       227810: 0
       227820: 0
       227821: 0
-      227822: 0
       227830: 0
       227840: 0
       227850: 0
       227860: 0
       227861: 0
-      227862: 0
       227870: 0
       227880: 0
       227881: 0
-      227882: 0
       227890: 0
       227900: 0
       227910: 0
       227920: 0
       227921: 0
-      227922: 0
       227930: 0
       227940: 0
       227950: 0
@@ -956,7 +952,6 @@ groups:
       227961: 0
       227970: 0
       227971: 0
-      227972: 0
       227980: 0
       227990: 0
       228000: 0
@@ -973,12 +968,104 @@ groups:
       228110: 0
       228120: 0
       228121: 0
-      228122: 0
-      228123: 0
       228130: 0
       228140: 0
       228150: 0
       228160: 0
+      228170: 0
+      228180: 0
+      228190: 0
+      228200: 0
+      228210: 0
+      228230: 0
+      228240: 0
+      228250: 0
+      228260: 0
+      228270: 0
+      228290: 0
+      228300: 0
+      228310: 0
+      228320: 0
+      228330: 0
+      228340: 0
+      225060: 0
+      228350: 0
+      228360: 0
+      228370: 0
+      228380: 0
+      228390: 0
+      228400: 0
+      228410: 0
+      228420: 0
+      228430: 0
+      228440: 0
+      228450: 0
+      228460: 0
+      228470: 0
+      228480: 0
+      228490: 0
+      228500: 0
+      228510: 0
+      228520: 0
+      228530: 0
+      228540: 0
+      228550: 0
+      228560: 0
+      228570: 0
+      228580: 0
+      228590: 0
+      228600: 0
+      228610: 0
+      228620: 0
+      228630: 0
+      228640: 0
+      228650: 0
+      228660: 0
+      228670: 0
+      228680: 0
+      225090: 0
+      228690: 0
+      228700: 0
+      228710: 0
+      228720: 0
+      228730: 0
+      228740: 0
+      243400: 0
+      243410: 0
+      228750: 0
+      228760: 0
+      228770: 0
+      228780: 0
+      228790: 0
+      228800: 0
+      228810: 0
+      228820: 0
+      228830: 0
+      228840: 0
+      228850: 0
+      228860: 0
+      228870: 0
+      228880: 0
+      228890: 0
+      228900: 0
+      228910: 0
+      228920: 0
+      228930: 0
+      228940: 0
+      228950: 0
+      228960: 0
+      228970: 0
+      228980: 0
+      228990: 0
+      229000: 0
+      229010: 0
+      229020: 0
+      229021: 0
+      229030: 0
+      229040: 0
+      229050: 0
+      229060: 0
+      229070: 0
       241530: 0
       241531: 0
     category: Apps
@@ -996,24 +1083,196 @@ groups:
     description: WHMCS protection
     status: 1
   Drupal:
-    rule_count: 7
-    rule_parent_count: 4
+    rule_count: 179
+    rule_parent_count: 98
     rule_inactive_list: {}
     rule_active_list:
       221270: 0
       221280: 0
-      221970: 0
-      221971: 0
       231000: 0
       231001: 0
       231002: 0
+      231010: 0
+      231011: 0
+      241790: 0
+      241910: 0
+      241860: 0
+      231020: 0
+      231030: 0
+      231050: 0
+      231060: 0
+      231070: 0
+      231080: 0
+      231090: 0
+      231100: 0
+      231111: 0
+      231130: 0
+      231140: 0
+      231150: 0
+      231151: 0
+      231152: 0
+      231160: 0
+      231170: 0
+      231180: 0
+      231190: 0
+      231200: 0
+      231210: 0
+      231220: 0
+      231230: 0
+      231240: 0
+      231250: 0
+      231260: 0
+      231261: 0
+      231262: 0
+      231263: 0
+      231264: 0
+      231265: 0
+      231266: 0
+      231267: 0
+      231268: 0
+      231270: 0
+      231280: 0
+      231290: 0
+      231300: 0
+      231301: 0
+      231302: 0
+      210310: 0
+      231310: 0
+      231320: 0
+      231331: 0
+      231341: 0
+      231351: 0
+      231360: 0
+      231370: 0
+      231380: 0
+      231390: 0
+      210360: 0
+      231400: 0
+      231411: 0
+      231420: 0
+      231430: 0
+      231440: 0
+      231460: 0
+      231470: 0
+      231471: 0
+      231472: 0
+      210370: 0
+      231480: 0
+      231481: 0
+      210430: 0
+      231490: 0
+      231500: 0
+      231510: 0
+      231511: 0
+      231512: 0
+      231513: 0
+      231520: 0
+      231530: 0
+      231540: 0
+      231550: 0
+      231560: 0
+      231570: 0
+      231580: 0
+      231590: 0
+      231600: 0
+      231610: 0
+      231620: 0
+      231630: 0
+      231640: 0
+      231641: 0
+      231642: 0
+      231643: 0
+      231644: 0
+      231650: 0
+      231660: 0
+      231670: 0
+      231680: 0
+      231690: 0
+      231691: 0
+      231692: 0
+      231700: 0
+      231710: 0
+      231711: 0
+      231712: 0
+      231713: 0
+      231720: 0
+      231721: 0
+      231722: 0
+      231730: 0
+      231731: 0
+      231732: 0
+      231733: 0
+      231740: 0
+      231741: 0
+      231742: 0
+      231743: 0
+      242880: 0
+      231750: 0
+      231751: 0
+      231752: 0
+      231753: 0
+      231754: 0
+      231760: 0
+      231770: 0
+      231771: 0
+      231772: 0
+      231773: 0
+      231774: 0
+      231780: 0
+      231781: 0
+      231782: 0
+      231783: 0
+      231784: 0
+      231790: 0
+      231791: 0
+      231792: 0
+      231793: 0
+      231800: 0
+      231801: 0
+      231802: 0
+      231803: 0
+      231804: 0
+      231810: 0
+      231811: 0
+      231812: 0
+      231813: 0
+      231814: 0
+      231820: 0
+      231821: 0
+      231822: 0
+      231823: 0
+      231824: 0
+      231870: 0
+      231871: 0
+      231872: 0
+      231873: 0
+      231874: 0
+      231880: 0
+      231881: 0
+      231882: 0
+      231883: 0
+      231890: 0
+      231900: 0
+      231901: 0
+      231902: 0
+      231903: 0
+      231904: 0
+      231910: 0
+      231920: 0
+      231930: 0
+      231940: 0
+      231950: 0
+      243140: 0
+      231960: 0
+      231970: 0
+      231980: 0
     category: Apps
     default_status: 1
     description: Drupal protection
     status: 1
   OtherApps:
-    rule_count: 446
-    rule_parent_count: 265
+    rule_count: 706
+    rule_parent_count: 428
     rule_inactive_list:
       240950: 0
     rule_active_list:
@@ -1026,7 +1285,7 @@ groups:
       220110: 0
       220111: 0
       220120: 0
-      220121: 0
+      220122: 0
       220140: 0
       220150: 0
       220160: 0
@@ -1453,6 +1712,7 @@ groups:
       241680: 0
       241681: 0
       241682: 0
+      241690: 0
       241700: 0
       241710: 0
       241720: 0
@@ -1462,6 +1722,265 @@ groups:
       241760: 0
       241761: 0
       241770: 0
+      241780: 0
+      241781: 0
+      241782: 0
+      241783: 0
+      241800: 0
+      241810: 0
+      241820: 0
+      241830: 0
+      241831: 0
+      241840: 0
+      241850: 0
+      241870: 0
+      241880: 0
+      241890: 0
+      241900: 0
+      241920: 0
+      241940: 0
+      241941: 0
+      241942: 0
+      241950: 0
+      241960: 0
+      241961: 0
+      241962: 0
+      241970: 0
+      241980: 0
+      241981: 0
+      241990: 0
+      242000: 0
+      242001: 0
+      242002: 0
+      242010: 0
+      242020: 0
+      242021: 0
+      242030: 0
+      242031: 0
+      242040: 0
+      242050: 0
+      242060: 0
+      242070: 0
+      242080: 0
+      242090: 0
+      242100: 0
+      242101: 0
+      242110: 0
+      242120: 0
+      242121: 0
+      242130: 0
+      242140: 0
+      242141: 0
+      242142: 0
+      242160: 0
+      242161: 0
+      242181: 0
+      242182: 0
+      242183: 0
+      242184: 0
+      242185: 0
+      242186: 0
+      242190: 0
+      242200: 0
+      242201: 0
+      242210: 0
+      242220: 0
+      242230: 0
+      242231: 0
+      242232: 0
+      242240: 0
+      242241: 0
+      242242: 0
+      242243: 0
+      242250: 0
+      242260: 0
+      242270: 0
+      242271: 0
+      242280: 0
+      242290: 0
+      242291: 0
+      242292: 0
+      242293: 0
+      242300: 0
+      242301: 0
+      242302: 0
+      242303: 0
+      242310: 0
+      242320: 0
+      242330: 0
+      242340: 0
+      242350: 0
+      242360: 0
+      242361: 0
+      242370: 0
+      242380: 0
+      242390: 0
+      242400: 0
+      242401: 0
+      242402: 0
+      242403: 0
+      242404: 0
+      242405: 0
+      242410: 0
+      242420: 0
+      242430: 0
+      242440: 0
+      242441: 0
+      242442: 0
+      242443: 0
+      242450: 0
+      242480: 0
+      242481: 0
+      242482: 0
+      242490: 0
+      242500: 0
+      242510: 0
+      242511: 0
+      242512: 0
+      242530: 0
+      242540: 0
+      242550: 0
+      242560: 0
+      242580: 0
+      242590: 0
+      242600: 0
+      242610: 0
+      242621: 0
+      242622: 0
+      242623: 0
+      242624: 0
+      242625: 0
+      242626: 0
+      242627: 0
+      242630: 0
+      242631: 0
+      242640: 0
+      242650: 0
+      242660: 0
+      242661: 0
+      242662: 0
+      242663: 0
+      242670: 0
+      242680: 0
+      242681: 0
+      210320: 0
+      242700: 0
+      242710: 0
+      242720: 0
+      242730: 0
+      242740: 0
+      242750: 0
+      242760: 0
+      242770: 0
+      242780: 0
+      242800: 0
+      242810: 0
+      242820: 0
+      242830: 0
+      242831: 0
+      242832: 0
+      242833: 0
+      242840: 0
+      242850: 0
+      242860: 0
+      242870: 0
+      242871: 0
+      242872: 0
+      215020: 0
+      242890: 0
+      242900: 0
+      242910: 0
+      242920: 0
+      242930: 0
+      242940: 0
+      242950: 0
+      242960: 0
+      242970: 0
+      242980: 0
+      242990: 0
+      242991: 0
+      242992: 0
+      242993: 0
+      242994: 0
+      242995: 0
+      242996: 0
+      210440: 0
+      243000: 0
+      243010: 0
+      243020: 0
+      243040: 0
+      243050: 0
+      243060: 0
+      243070: 0
+      243080: 0
+      240001: 0
+      243100: 0
+      243110: 0
+      243090: 0
+      243120: 0
+      243130: 0
+      243170: 0
+      243150: 0
+      243160: 0
+      243161: 0
+      243162: 0
+      243163: 0
+      243164: 0
+      243165: 0
+      243166: 0
+      243167: 0
+      243168: 0
+      210450: 0
+      210451: 0
+      210452: 0
+      210453: 0
+      243180: 0
+      243181: 0
+      243190: 0
+      243200: 0
+      243201: 0
+      243202: 0
+      243203: 0
+      243210: 0
+      243220: 0
+      243230: 0
+      243240: 0
+      243250: 0
+      243251: 0
+      243252: 0
+      243260: 0
+      243270: 0
+      243280: 0
+      243290: 0
+      243300: 0
+      243310: 0
+      243320: 0
+      243330: 0
+      243340: 0
+      243341: 0
+      243342: 0
+      243350: 0
+      243360: 0
+      243380: 0
+      243390: 0
+      243420: 0
+      243430: 0
+      243440: 0
+      243450: 0
+      243460: 0
+      243461: 0
+      243462: 0
+      243470: 0
+      243480: 0
+      243490: 0
+      243500: 0
+      243510: 0
+      243511: 0
+      243520: 0
+      243530: 0
+      243540: 0
+      243560: 0
+      243561: 0
     category: Apps
     default_status: 1
     description: Other apps protection
@@ -1709,10 +2228,39 @@ rules:
     group: Generic
     file: categories.conf
     status: 1
-  210190:
-    parent: 210190
+  210470:
+    parent: 210470
     default_status: 1
-    description: 'COMODO WAF: CVE-2015-7712'
+    description: 'COMODO WAF: Directory traversal vulnerability in Zikula 1.3.x before
+      1.3.11 and 1.4.x before 1.4.4 (CVE-2016-9835)'
+    group: Generic
+    file: categories.conf
+    status: 1
+  210480:
+    parent: 210480
+    default_status: 1
+    description: 'COMODO WAF: Source IP validation'
+    group: Generic
+    file: categories.conf
+    status: 1
+  210481:
+    parent: 210480
+    default_status: 1
+    description: ''
+    group: Generic
+    file: categories.conf
+    status: 1
+  210490:
+    parent: 210490
+    default_status: 1
+    description: 'COMODO WAF: URL validation'
+    group: Generic
+    file: categories.conf
+    status: 1
+  210491:
+    parent: 210490
+    default_status: 1
+    description: ''
     group: Generic
     file: categories.conf
     status: 1
@@ -1867,6 +2415,30 @@ rules:
     parent: 220130
     default_status: 1
     description: 'COMODO WAF: Vulnerability in RealPlayer 16.0.2.32 and earlier (CVE-2013-3299)'
+    group: Other
+    file: categories.conf
+    status: 1
+  215030:
+    parent: 215030
+    default_status: 1
+    description: 'COMODO WAF: XSS Vulnerability in the SilverStripe CMS & Framework
+      v3.1.15 (CVE-2015-8606)'
+    group: Other
+    file: categories.conf
+    status: 1
+  215040:
+    parent: 215040
+    default_status: 1
+    description: 'COMODO WAF: Open Redirect vulnerability in the SilverStripe CMS
+      & Framework v3.1.13 (CVE-2015-5062)'
+    group: Other
+    file: categories.conf
+    status: 1
+  215050:
+    parent: 215050
+    default_status: 1
+    description: 'COMODO WAF: Directory traversal vulnerability in Coppermine Photo
+      Gallery 1.5.4 (CVE-2015-3923)'
     group: Other
     file: categories.conf
     status: 1
@@ -2027,6 +2599,13 @@ rules:
     group: HTTP
     file: categories.conf
     status: 1
+  217010:
+    parent: 217010
+    default_status: 1
+    description: 'COMODO WAF: Referer validation'
+    group: HTTP
+    file: categories.conf
+    status: 1
   230040:
     parent: 230040
     default_status: 1
@@ -2102,14 +2681,14 @@ rules:
   210270:
     parent: 210270
     default_status: 1
-    description: 'COMODO WAF: GET or HEAD Request with Body Content.'
+    description: 'COMODO WAF: HEAD Request with Body Content.'
     group: Protocol
     file: categories.conf
     status: 1
   210280:
     parent: 210280
     default_status: 1
-    description: 'COMODO WAF: POST request missing Content-Length Header.'
+    description: 'COMODO WAF: HTTP/1.0 POST request missing Content-Length Header.'
     group: Protocol
     file: categories.conf
     status: 1
@@ -2180,6 +2759,13 @@ rules:
     parent: 210420
     default_status: 1
     description: 'COMODO WAF: Invalid character in request'
+    group: Protocol
+    file: categories.conf
+    status: 1
+  217200:
+    parent: 217200
+    default_status: 1
+    description: 'COMODO WAF: HTTP/1.1 POST request missing Content-Length Header.'
     group: Protocol
     file: categories.conf
     status: 1
@@ -2485,6 +3071,13 @@ rules:
     group: PHPGen
     file: categories.conf
     status: 1
+  220031:
+    parent: 220030
+    default_status: 1
+    description: ''
+    group: PHPGen
+    file: categories.conf
+    status: 1
   211500:
     parent: 211500
     default_status: 1
@@ -2634,10 +3227,19 @@ rules:
     group: Joomla
     file: categories.conf
     status: 1
-  222391:
-    parent: 222390
+  222510:
+    parent: 222510
     default_status: 1
-    description: ''
+    description: Unauthorized account creation and modification in Joomla! before
+      3.6.4 (CVE-2016-8869, CVE-2016-9836, CVE-2016-9838)
+    group: Joomla
+    file: categories.conf
+    status: 1
+  222520:
+    parent: 222520
+    default_status: 1
+    description: Unauthorized account creation and modification in Joomla! before
+      3.6.4 (CVE-2016-8870, CVE-2016-9836)
     group: Joomla
     file: categories.conf
     status: 1
@@ -2673,13 +3275,6 @@ rules:
     parent: 220680
     default_status: 1
     description: 'COMODO WAF: Vulnerability in Multi Calendar (CVE-2013-5953)'
-    group: JComponent
-    file: categories.conf
-    status: 1
-  220681:
-    parent: 220680
-    default_status: 1
-    description: ''
     group: JComponent
     file: categories.conf
     status: 1
@@ -2741,13 +3336,6 @@ rules:
     group: JComponent
     file: categories.conf
     status: 1
-  240011:
-    parent: 240010
-    default_status: 1
-    description: ''
-    group: JComponent
-    file: categories.conf
-    status: 1
   222370:
     parent: 222370
     default_status: 1
@@ -2787,6 +3375,78 @@ rules:
     group: JComponent
     file: categories.conf
     status: 1
+  222410:
+    parent: 222410
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerabilities in the Kunena component
+      before 3.0.6 for Joomla! (CVE-2014-9102)'
+    group: JComponent
+    file: categories.conf
+    status: 1
+  222420:
+    parent: 222420
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerabilities in the Kunena component before 3.0.6
+      for Joomla! (CVE-2014-9103)'
+    group: JComponent
+    file: categories.conf
+    status: 1
+  222441:
+    parent: 222440
+    default_status: 1
+    description: 'COMODO WAF: XSS and SQLi vulnerability in the Joomla extension Huge
+      IT gallery v1.1.5 (CVE-2016-1000113 & CVE-2016-1000114)'
+    group: JComponent
+    file: categories.conf
+    status: 1
+  222460:
+    parent: 222460
+    default_status: 1
+    description: 'COMODO WAF: SQL Injection & XSS vulnerability in Joomla Huge IT
+      Catalog v1.0.4 (CVE-2016-1000119 & CVE-2016-1000120)'
+    group: JComponent
+    file: categories.conf
+    status: 1
+  222470:
+    parent: 222470
+    default_status: 1
+    description: 'COMODO WAF: SQL Injection & XSS vulnerability in Joomla Huge IT
+      Slider v1.0.9 (CVE-2016-1000121 & CVE-2016-1000122)'
+    group: JComponent
+    file: categories.conf
+    status: 1
+  222480:
+    parent: 222480
+    default_status: 1
+    description: 'COMODO WAF: XSS and SQLi vulnerability in the Joomla! extension
+      Huge IT slideshow v1.0.4 (CVE-2016-1000117) & (CVE-2016-1000118)'
+    group: JComponent
+    file: categories.conf
+    status: 1
+  222490:
+    parent: 222490
+    default_status: 1
+    description: 'COMODO WAF: SQLi vulnerability in the Joomla! extension Huge-IT
+      Portfolio Gallery manager v1.1.5 (CVE-2016-1000116)'
+    group: JComponent
+    file: categories.conf
+    status: 1
+  222530:
+    parent: 222530
+    default_status: 1
+    description: 'COMODO WAF: SQLi vulnerability in Huge-IT Catalog v1.0.7 for Joomla
+      (CVE-2016-1000125)'
+    group: JComponent
+    file: categories.conf
+    status: 1
+  222540:
+    parent: 222540
+    default_status: 1
+    description: 'COMODO WAF: SQLi vulnerability in Huge-IT Catalog v1.0.7 for Joomla
+      (CVE-2016-1000125)'
+    group: JComponent
+    file: categories.conf
+    status: 1
   240020:
     parent: 240020
     default_status: 1
@@ -2794,7 +3454,7 @@ rules:
     group: WordPress
     file: categories.conf
     status: 1
-  240021:
+  240022:
     parent: 240020
     default_status: 1
     description: ''
@@ -2804,7 +3464,7 @@ rules:
   225010:
     parent: 225010
     default_status: 1
-    description: 'COMODO WAF: XSS vulnerability in WordPress before 4.2.1 (CVE-2015-3440)'
+    description: 'COMODO WAF: XSS vulnerability in WordPress before 4.2.1 (CVE-2015-3440,CVE-2015-8834)'
     group: WordPress
     file: categories.conf
     status: 1
@@ -2835,6 +3495,66 @@ rules:
     description: 'COMODO WAF: Authenticated XSS vulnerability in WordPress 3.7 to
       4.4 (CVE-2016-1564)'
     group: WordPress
+    file: categories.conf
+    status: 1
+  225080:
+    parent: 225080
+    default_status: 1
+    description: 'COMODO WAF: XSS in Plupload before 2.1.9 or MediaElement.js before
+      2.21.0, as used in WordPress before 4.5.2 (CVE-2016-4566 & CVE-2016-4567)'
+    group: WordPress
+    file: categories.conf
+    status: 1
+  225120:
+    parent: 225120
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in WordPress before 4.6.1 (CVE-2016-7168)'
+    group: WordPress
+    file: categories.conf
+    status: 1
+  225100:
+    parent: 225100
+    default_status: 1
+    description: 'COMODO WAF: XSS in the network settings page in WordPress 4.4.4
+      (CVE-2016-6634)'
+    group: WordPress
+    file: categories.conf
+    status: 1
+  225110:
+    parent: 225110
+    default_status: 1
+    description: 'COMODO WAF: Authenticated Denial of Service by Path Traversal in
+      WordPress 4.5.3 (CVE-2016-6896)'
+    group: WordPress
+    file: categories.conf
+    status: 1
+  225140:
+    parent: 225140
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the in WordPress before 4.5.3 (CVE-2016-5834)'
+    group: WordPress
+    file: categories.conf
+    status: 1
+  225141:
+    parent: 225140
+    default_status: 1
+    description: ''
+    group: WordPress
+    file: categories.conf
+    status: 1
+  225150:
+    parent: 225150
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in WordPress before 4.3.1 (CVE-2015-7989)'
+    group: WordPress
+    file: categories.conf
+    status: 1
+  210460:
+    parent: 210460
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the pondol-formmail 1.1 For WordPress
+      (CVE-2016-1000146)'
+    group: WPPlugin
     file: categories.conf
     status: 1
   220200:
@@ -2963,7 +3683,8 @@ rules:
   220500:
     parent: 220500
     default_status: 1
-    description: 'COMODO WAF: Vulnerability in Newsletter Manager before 1.0.2 (CVE-2012-6628)'
+    description: 'COMODO WAF: XSS in Newsletter Manager before 1.0.2 for WordPress
+      (CVE-2012-6628)'
     group: WPPlugin
     file: categories.conf
     status: 1
@@ -2999,7 +3720,8 @@ rules:
   220620:
     parent: 220620
     default_status: 1
-    description: 'COMODO WAF: Vulnerability in SoundCloud Is Gold plugin 2.1 (CVE-2012-6624)'
+    description: 'COMODO WAF: XSS vulnerability in the SoundCloud Is Gold plugin 2.1
+      for WordPress (CVE-2012-6624)'
     group: WPPlugin
     file: categories.conf
     status: 1
@@ -3705,7 +4427,8 @@ rules:
   222050:
     parent: 222050
     default_status: 1
-    description: 'COMODO WAF: Various vulnerabilities in the Slider Revolution Plugin'
+    description: 'COMODO WAF: Multiple vulnerabilities in the Slider Revolution Plugin
+      for WordPress (CVE-2014-9734 & CVE-2014-9735)'
     group: WPPlugin
     file: categories.conf
     status: 1
@@ -3939,8 +4662,8 @@ rules:
   222360:
     parent: 222360
     default_status: 1
-    description: 'COMODO WAF: XSS wp-football plugin 1.1 and earlier for WordPress
-      (CVE-2014-4586)'
+    description: 'COMODO WAF: XSS vulnerability in the wp-football plugin 1.1 and
+      earlier for WordPress (CVE-2014-4586)'
     group: WPPlugin
     file: categories.conf
     status: 1
@@ -4154,22 +4877,8 @@ rules:
   226250:
     parent: 226250
     default_status: 1
-    description: 'COMODO WAF: Multiple XSS vulnerabilities in the WP Media Cleaner
-      plugin 2.2.6 for WordPress (CVE-2015-2195)'
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  226251:
-    parent: 226250
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  226252:
-    parent: 226250
-    default_status: 1
-    description: ''
+    description: 'COMODO WAF: XSS vulnerabilities in the WP Media Cleaner plugin 2.2.6
+      for WordPress (CVE-2015-2195)'
     group: WPPlugin
     file: categories.conf
     status: 1
@@ -4257,34 +4966,6 @@ rules:
     group: WPPlugin
     file: categories.conf
     status: 1
-  226323:
-    parent: 226320
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  226324:
-    parent: 226320
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  226325:
-    parent: 226320
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  226326:
-    parent: 226320
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
   226330:
     parent: 226330
     default_status: 1
@@ -4343,19 +5024,12 @@ rules:
   226390:
     parent: 226390
     default_status: 1
-    description: 'COMODO WAF: XSS and CSRF vulnerabilities in the AB Google Map Travel
-      (AB-MAP) plugin before 4.0 for WordPress (CVE-2015-2755)'
+    description: 'COMODO WAF: CSRF vulnerability in the AB Google Map Travel (AB-MAP)
+      plugin before 4.0 for WordPress (CVE-2015-2755)'
     group: WPPlugin
     file: categories.conf
     status: 1
   226391:
-    parent: 226390
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  226392:
     parent: 226390
     default_status: 1
     description: ''
@@ -4388,8 +5062,8 @@ rules:
   226420:
     parent: 226420
     default_status: 1
-    description: 'COMODO WAF: CSRF and XSS vulnerabilities in the CrossSlide jQuery
-      plugin 2.0.5 for WordPress (CVE-2015-2089)'
+    description: 'COMODO WAF: CSRF vulnerability in the CrossSlide jQuery plugin 2.0.5
+      for WordPress (CVE-2015-2089)'
     group: WPPlugin
     file: categories.conf
     status: 1
@@ -4400,29 +5074,15 @@ rules:
     group: WPPlugin
     file: categories.conf
     status: 1
-  226422:
-    parent: 226420
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
   226430:
     parent: 226430
     default_status: 1
-    description: 'COMODO WAF: CSRF and XSS vulnerabilities in the Acobot Live Chat
-      & Contact Form plugin 2.0 for WordPress (CVE-2015-2039)'
+    description: 'COMODO WAF: CSRF vulnerability in the Acobot Live Chat & Contact
+      Form plugin 2.0 for WordPress (CVE-2015-2039)'
     group: WPPlugin
     file: categories.conf
     status: 1
   226431:
-    parent: 226430
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  226432:
     parent: 226430
     default_status: 1
     description: ''
@@ -4504,18 +5164,11 @@ rules:
     group: WPPlugin
     file: categories.conf
     status: 1
-  226490:
-    parent: 226490
-    default_status: 1
-    description: 'COMODO WAF: CSRF and XSS vulnerabilities in the Easy Social Icons
-      plugin before 1.2.3 for WordPress (CVE-2015-2084)'
-    group: WPPlugin
-    file: categories.conf
-    status: 1
   226491:
     parent: 226490
     default_status: 1
-    description: ''
+    description: 'COMODO WAF: CSRF vulnerability in the Easy Social Icons plugin before
+      1.2.3 for WordPress (CVE-2015-2084)'
     group: WPPlugin
     file: categories.conf
     status: 1
@@ -4557,18 +5210,11 @@ rules:
     group: WPPlugin
     file: categories.conf
     status: 1
-  226530:
-    parent: 226530
-    default_status: 1
-    description: 'COMODO WAF: Multiple XSS and CSRF vulnerabilities in the Mobile
-      Domain plugin 1.5.2 for WordPress (CVE-2015-1581)'
-    group: WPPlugin
-    file: categories.conf
-    status: 1
   226531:
     parent: 226530
     default_status: 1
-    description: ''
+    description: 'COMODO WAF: CSRF vulnerability in the Mobile Domain plugin 1.5.2
+      for WordPress (CVE-2015-1581)'
     group: WPPlugin
     file: categories.conf
     status: 1
@@ -4598,19 +5244,12 @@ rules:
   226560:
     parent: 226560
     default_status: 1
-    description: 'COMODO WAF: Multiple XSS and CSRF vulnerabilities in the Redirection
-      Page plugin 1.2 for WordPress (CVE-2015-1580)'
+    description: 'COMODO WAF: CSRF vulnerability in the Redirection Page plugin 1.2
+      for WordPress (CVE-2015-1580)'
     group: WPPlugin
     file: categories.conf
     status: 1
   226561:
-    parent: 226560
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  226562:
     parent: 226560
     default_status: 1
     description: ''
@@ -4704,19 +5343,12 @@ rules:
   226640:
     parent: 226640
     default_status: 1
-    description: 'COMODO WAF: CSRF and XSS vulnerabilities in the Pods plugin before
-      2.5 for WordPress (CVE-2014-7957)'
+    description: 'COMODO WAF: CSRF vulnerabilities in the Pods plugin before 2.5 for
+      WordPress (CVE-2014-7957)'
     group: WPPlugin
     file: categories.conf
     status: 1
   226641:
-    parent: 226640
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  226642:
     parent: 226640
     default_status: 1
     description: ''
@@ -4854,13 +5486,6 @@ rules:
     file: categories.conf
     status: 1
   226741:
-    parent: 226740
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  226742:
     parent: 226740
     default_status: 1
     description: ''
@@ -5072,15 +5697,8 @@ rules:
   226940:
     parent: 226940
     default_status: 1
-    description: 'COMODO WAF: COMODO WAF: XSS vulnerabilities in the WP Google Maps
-      plugin before 6.0.27 for WordPress (CVE-2014-7182)'
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  226941:
-    parent: 226940
-    default_status: 1
-    description: ''
+    description: 'COMODO WAF: XSS vulnerabilities in the WP Google Maps plugin before
+      6.0.27 for WordPress (CVE-2014-7182)'
     group: WPPlugin
     file: categories.conf
     status: 1
@@ -5121,13 +5739,6 @@ rules:
     default_status: 1
     description: 'COMODO WAF: Multiple directory traversal vulnerabilities in Tera
       Charts (tera-charts) plugin 0.1 for WordPress (CVE-2014-4940)'
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  226991:
-    parent: 226990
-    default_status: 1
-    description: ''
     group: WPPlugin
     file: categories.conf
     status: 1
@@ -5362,23 +5973,16 @@ rules:
     group: WPPlugin
     file: categories.conf
     status: 1
-  227250:
-    parent: 227250
+  227260:
+    parent: 227260
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerabilities in the Encrypted Contact
-      Form plugin before 1.1 for WordPress (CVE-2015-4010)'
+    description: 'COMODO WAF: CSRF vulnerabilities in the Encrypted Contact Form plugin
+      before 1.1 for WordPress (CVE-2015-4010)'
     group: WPPlugin
     file: categories.conf
     status: 1
-  227251:
-    parent: 227250
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  227252:
-    parent: 227250
+  227261:
+    parent: 227260
     default_status: 1
     description: ''
     group: WPPlugin
@@ -5418,19 +6022,12 @@ rules:
   227310:
     parent: 227310
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the WP Smiley plugin 1.4.1
-      for WordPress (CVE-2015-4140)'
+    description: 'COMODO WAF: CSRF vulnerability in the WP Smiley plugin 1.4.1 for
+      WordPress (CVE-2015-4140)'
     group: WPPlugin
     file: categories.conf
     status: 1
   227311:
-    parent: 227310
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  227312:
     parent: 227310
     default_status: 1
     description: ''
@@ -5591,19 +6188,12 @@ rules:
   227531:
     parent: 227530
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the Facebook Like Box (cardoza-facebook-like-box)
+    description: 'COMODO WAF: CSRF vulnerability in the Facebook Like Box (cardoza-facebook-like-box)
       plugin before 2.8.3 for WordPress (CVE-2014-9524)'
     group: WPPlugin
     file: categories.conf
     status: 1
   227532:
-    parent: 227530
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  227533:
     parent: 227530
     default_status: 1
     description: ''
@@ -5628,19 +6218,12 @@ rules:
   227551:
     parent: 227550
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the Our Team Showcase (our-team-enhanced)
+    description: 'COMODO WAF: CSRF vulnerability in the Our Team Showcase (our-team-enhanced)
       plugin before 1.3 for WordPress (CVE-2014-9523)'
     group: WPPlugin
     file: categories.conf
     status: 1
   227552:
-    parent: 227550
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  227553:
     parent: 227550
     default_status: 1
     description: ''
@@ -5672,19 +6255,12 @@ rules:
   210150:
     parent: 210150
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the Simple Share Buttons
-      Adder plugin before 4.5 for WordPress (CVE-2014-4717)'
+    description: 'COMODO WAF: CSRF vulnerability in the Simple Share Buttons Adder
+      plugin before 4.5 for WordPress (CVE-2014-4717)'
     group: WPPlugin
     file: categories.conf
     status: 1
   210151:
-    parent: 210150
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  210152:
     parent: 210150
     default_status: 1
     description: ''
@@ -5811,19 +6387,12 @@ rules:
   227700:
     parent: 227700
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the WP-ViperGB plugin before
-      1.3.11 for WordPress (CVE-2014-9460)'
+    description: 'COMODO WAF: CSRF vulnerability in the WP-ViperGB plugin before 1.3.11
+      for WordPress (CVE-2014-9460)'
     group: WPPlugin
     file: categories.conf
     status: 1
   227701:
-    parent: 227700
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  227702:
     parent: 227700
     default_status: 1
     description: ''
@@ -5841,7 +6410,7 @@ rules:
   227720:
     parent: 227720
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the Timed Popup (wp-timed-popup)
+    description: 'COMODO WAF: CSRF vulnerability in the Timed Popup (wp-timed-popup)
       plugin 1.3 for WordPress (CVE-2014-9525)'
     group: WPPlugin
     file: categories.conf
@@ -5853,18 +6422,11 @@ rules:
     group: WPPlugin
     file: categories.conf
     status: 1
-  227722:
-    parent: 227720
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
   227730:
     parent: 227730
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the Sliding Social Icons
-      plugin 1.61 for WordPress (CVE-2014-9437)'
+    description: 'COMODO WAF: CSRF vulnerability in the Sliding Social Icons plugin
+      1.61 for WordPress (CVE-2014-9437)'
     group: WPPlugin
     file: categories.conf
     status: 1
@@ -5875,18 +6437,11 @@ rules:
     group: WPPlugin
     file: categories.conf
     status: 1
-  227732:
-    parent: 227730
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
   227740:
     parent: 227740
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the Simple Sticky Footer
-      plugin before 1.3.3 for WordPress (CVE-2014-9454)'
+    description: 'COMODO WAF: CSRF vulnerability in the Simple Sticky Footer plugin
+      before 1.3.3 for WordPress (CVE-2014-9454)'
     group: WPPlugin
     file: categories.conf
     status: 1
@@ -5897,29 +6452,15 @@ rules:
     group: WPPlugin
     file: categories.conf
     status: 1
-  227742:
-    parent: 227740
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
   227750:
     parent: 227750
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the IP Ban (simple-ip-ban)
-      plugin 1.2.3 for WordPress (CVE-2014-9413)'
+    description: 'COMODO WAF: CSRF vulnerability in the IP Ban (simple-ip-ban) plugin
+      1.2.3 for WordPress (CVE-2014-9413)'
     group: WPPlugin
     file: categories.conf
     status: 1
   227751:
-    parent: 227750
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  227752:
     parent: 227750
     default_status: 1
     description: ''
@@ -5969,19 +6510,12 @@ rules:
   227820:
     parent: 227820
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the CreativeMinds CM Downloads
+    description: 'COMODO WAF: CSRF vulnerability in the CreativeMinds CM Downloads
       Manager plugin before 2.0.7 for WordPress (CVE-2014-9129)'
     group: WPPlugin
     file: categories.conf
     status: 1
   227821:
-    parent: 227820
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  227822:
     parent: 227820
     default_status: 1
     description: ''
@@ -6015,19 +6549,12 @@ rules:
   227860:
     parent: 227860
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the Quick Page/Post Redirect
-      plugin before 5.0.5 for WordPress (CVE-2014-2598)'
+    description: 'COMODO WAF: CSRF vulnerability in the Quick Page/Post Redirect plugin
+      before 5.0.5 for WordPress (CVE-2014-2598)'
     group: WPPlugin
     file: categories.conf
     status: 1
   227861:
-    parent: 227860
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  227862:
     parent: 227860
     default_status: 1
     description: ''
@@ -6045,19 +6572,12 @@ rules:
   227880:
     parent: 227880
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the SimpleFlickr plugin
-      3.0.3 and earlier for WordPress (CVE-2014-9396)'
+    description: 'COMODO WAF: CSRF vulnerability in the SimpleFlickr plugin 3.0.3
+      and earlier for WordPress (CVE-2014-9396)'
     group: WPPlugin
     file: categories.conf
     status: 1
   227881:
-    parent: 227880
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  227882:
     parent: 227880
     default_status: 1
     description: ''
@@ -6091,19 +6611,12 @@ rules:
   227920:
     parent: 227920
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the Twitget plugin before
-      3.3.3 for WordPress (CVE-2014-2559)'
+    description: 'COMODO WAF: CSRF vulnerability in the Twitget plugin before 3.3.3
+      for WordPress (CVE-2014-2559)'
     group: WPPlugin
     file: categories.conf
     status: 1
   227921:
-    parent: 227920
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  227922:
     parent: 227920
     default_status: 1
     description: ''
@@ -6159,19 +6672,12 @@ rules:
   227970:
     parent: 227970
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the SPNbabble plugin 1.4.1
-      and earlier for WordPress (CVE-2014-9339)'
+    description: 'COMODO WAF: CSRF vulnerability in the SPNbabble plugin 1.4.1 and
+      earlier for WordPress (CVE-2014-9339)'
     group: WPPlugin
     file: categories.conf
     status: 1
   227971:
-    parent: 227970
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  227972:
     parent: 227970
     default_status: 1
     description: ''
@@ -6293,26 +6799,12 @@ rules:
   228120:
     parent: 228120
     default_status: 1
-    description: 'COMODO WAF: CSRF & XSS vulnerability in the Contact Form Generator
-      plugin 2.0.1 and earlier for WordPress (CVE-2015-6965)'
+    description: 'COMODO WAF: CSRF vulnerability in the Contact Form Generator plugin
+      2.0.1 and earlier for WordPress (CVE-2015-6965)'
     group: WPPlugin
     file: categories.conf
     status: 1
   228121:
-    parent: 228120
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  228122:
-    parent: 228120
-    default_status: 1
-    description: ''
-    group: WPPlugin
-    file: categories.conf
-    status: 1
-  228123:
     parent: 228120
     default_status: 1
     description: ''
@@ -6348,6 +6840,752 @@ rules:
     default_status: 1
     description: 'COMODO WAF: Remote file download vulnerability in download-zip-attachments
       v1.0 for WordPress (CVE-2015-4704)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228170:
+    parent: 228170
+    default_status: 1
+    description: 'COMODO WAF: SQL Injection vulnerability in the WordPress plugin
+      Easy2Map-photos v1.0.9 (CVE-2015-4615).'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228180:
+    parent: 228180
+    default_status: 1
+    description: 'COMODO WAF: Directory Traversal Vulnerability in the WordPress plugin
+      Easy2map-photos v1.0.9 (CVE-2015-4617).'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228190:
+    parent: 228190
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerabilities in the WordPress plugin Catergory-grid-view-gallery
+      v2.3.1 (CVE-2013-4117)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228200:
+    parent: 228200
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerabilities in the WordPress plugin Ooorl v3.1.1
+      (CVE-2014-4542)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228210:
+    parent: 228210
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in Simple visitor stat
+      plugin in 1.0 for WordPress (CVE-2014-9453)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228230:
+    parent: 228230
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerabilities in the WordPress plugin Comment-Attachment
+      v1.0 (CVE-2013-6010)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228240:
+    parent: 228240
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Uploader Plugin 1.0.4 for WordPress
+      (CVE-2013-2287)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228250:
+    parent: 228250
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Bradesco Gateway plugin 2.0
+      for WordPress (CVE-2013-5916)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228260:
+    parent: 228260
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Recommend to a Friend plugin
+      1.0.2 for WordPress (CVE-2013-7276)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228270:
+    parent: 228270
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Tweet Blender plugin before
+      4.0.2 for WordPress (CVE-2013-6342)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228290:
+    parent: 228290
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the WP-Cron Dashboard plugin 1.1.5
+      and earlier for WordPress (CVE-2013-6991)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228300:
+    parent: 228300
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Spreadsheet (dhtmlxSpreadsheet)
+      plugin 2.0 for WordPress (CVE-2013-6281)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228310:
+    parent: 228310
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Duplicator plugin before 0.4.5
+      for WordPress (CVE-2013-4625)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228320:
+    parent: 228320
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the BackWPup plugin before 3.0.13
+      for WordPress (CVE-2013-4626)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228330:
+    parent: 228330
+    default_status: 1
+    description: 'COMODO WAF: PHP code injection vulnerability in XCloner 3.1.2 and
+      prior versions for WordPress (CVE-2015-4338)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228340:
+    parent: 228340
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the WP Photo Album Plus plugin
+      5.0.2 for WordPress (CVE-2013-3254)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  225060:
+    parent: 225060
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the WP Photo Album Plus Plugin
+      5.0.2 for WordPress (CVE-2013-3254)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228350:
+    parent: 228350
+    default_status: 1
+    description: 'COMODO WAF: SQL injection in the WordPress Spreadsheet (wpSS) plugin
+      0.62 for WordPress (CVE-2014-8363)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228360:
+    parent: 228360
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Ad-minister plugin 0.6 and
+      earlier for WordPress (CVE-2013-6993)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228370:
+    parent: 228370
+    default_status: 1
+    description: 'COMODO WAF: XSS in the Collne Welcart e-Commerce plugin 1.8.2 for
+      WordPress (CVE-2016-4827)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228380:
+    parent: 228380
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in Quartz plugin 1.01.1
+      for WordPress(CVE-2014-5185)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228390:
+    parent: 228390
+    default_status: 1
+    description: 'COMODO WAF: Directory traversal vulnerability in Advanced Dewplayer
+      plugin 1.2 for WordPress (CVE-2013-7240)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228400:
+    parent: 228400
+    default_status: 1
+    description: 'COMODO WAF: Absolute path traversal vulnerability in the WP AmASIN
+      - The Amazon Affiliate Shop plugin 0.9.6 and earlier for WordPress (CVE-2014-4577)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228410:
+    parent: 228410
+    default_status: 1
+    description: 'COMODO WAF: XSS in the Ultimate Member 1.3.28 For WordPress (CVE-2015-8354)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228420:
+    parent: 228420
+    default_status: 1
+    description: 'COMODO WAF: XSS in the Easy2Map plugin 1.2.9 For WordPress (CVE-2015-7668)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228430:
+    parent: 228430
+    default_status: 1
+    description: 'COMODO WAF: XSS in the Payment Form for PayPal Pro plugin 1.0.1
+      For WordPress (CVE-2015-7666)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228440:
+    parent: 228440
+    default_status: 1
+    description: 'COMODO WAF: XSS in the Calls to Action plugin version 2.4.3 For
+      WordPress (CVE-2015-8350)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228450:
+    parent: 228450
+    default_status: 1
+    description: 'COMODO WAF: XSS in the Role Scoper plugin version 1.3.66 For WordPress
+      (CVE-2015-8353)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228460:
+    parent: 228460
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Twitget plugin before 3.3.3
+      for WordPress (CVE-2014-2559)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228470:
+    parent: 228470
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the CreativeMinds CM Downloads
+      Manager plugin before 2.0.7 for WordPress (CVE-2014-9129)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228480:
+    parent: 228480
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Timed Popup (wp-timed-popup)
+      plugin 1.3 for WordPress (CVE-2014-9525)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228490:
+    parent: 228490
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Sliding Social Icons plugin
+      1.61 for WordPress (CVE-2014-9437)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228500:
+    parent: 228500
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Simple Sticky Footer plugin
+      before 1.3.3 for WordPress (CVE-2014-9454)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228510:
+    parent: 228510
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Quick Page/Post Redirect plugin
+      before 5.0.5 for WordPress (CVE-2014-2598)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228520:
+    parent: 228520
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the IP Ban (simple-ip-ban) plugin
+      1.2.3 for WordPress (CVE-2014-9413)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228530:
+    parent: 228530
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the WP-ViperGB plugin before 1.3.11
+      for WordPress (CVE-2014-9460)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228540:
+    parent: 228540
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Facebook Like Box (cardoza-facebook-like-box)
+      plugin before 2.8.3 for WordPress (CVE-2014-9524)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228550:
+    parent: 228550
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Our Team Showcase (our-team-enhanced)
+      plugin before 1.3 for WordPress (CVE-2014-9523)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228560:
+    parent: 228560
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the SimpleFlickr plugin 3.0.3 and
+      earlier for WordPress (CVE-2014-9396)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228570:
+    parent: 228570
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Simple Share Buttons Adder
+      plugin before 4.5 for WordPress (CVE-2014-4717)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228580:
+    parent: 228580
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the SPNbabble plugin 1.4.1 and
+      earlier for WordPress (CVE-2014-9339)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228590:
+    parent: 228590
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Contact Form Generator plugin
+      2.0.1 and earlier for WordPress (CVE-2015-6965)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228600:
+    parent: 228600
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the WP Smiley plugin 1.4.1 for
+      WordPress (CVE-2015-4140)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228610:
+    parent: 228610
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the AB Google Map Travel (AB-MAP)
+      plugin before 4.0 for WordPress (CVE-2015-2755)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228620:
+    parent: 228620
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the CrossSlide jQuery plugin 2.0.5
+      for WordPress (CVE-2015-2089)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228630:
+    parent: 228630
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Acobot Live Chat & Contact
+      Form plugin 2.0 for WordPress (CVE-2015-2039)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228640:
+    parent: 228640
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in the Mobile Domain plugin
+      1.5.2 for WordPress (CVE-2015-1581)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228650:
+    parent: 228650
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Easy Social Icons plugin before
+      1.2.3 for WordPress (CVE-2015-2084)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228660:
+    parent: 228660
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in the Redirection Page
+      plugin 1.2 for WordPress (CVE-2015-1580)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228670:
+    parent: 228670
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Encrypted Contact Form plugin
+      before 1.1 for WordPress (CVE-2015-4010)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228680:
+    parent: 228680
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerabilitiy in the Pods plugin before 2.5 for
+      WordPress (CVE-2014-7957)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  225090:
+    parent: 225090
+    default_status: 1
+    description: 'COMODO WAF: SQL Injection Vulnerability in WordPress plugin Count
+      per day 3.4 (CVE-2015-5533)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228690:
+    parent: 228690
+    default_status: 1
+    description: 'COMODO WAF: XSS in the Nofollow Links plugin before 1.0.11 For WordPress
+      (CVE-2016-4833)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228700:
+    parent: 228700
+    default_status: 1
+    description: 'COMODO WAF: Unauthenticated remote .jpg file upload using path traversal
+      in contus-video-comments v1.0 Plugin For WordPress (CVE-2016-1000112)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228710:
+    parent: 228710
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS in the Welcome Announcement Plugin 1.0.5
+      For WordPress'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228720:
+    parent: 228720
+    default_status: 1
+    description: 'COMODO WAF: Directory traversal vulnerability in XCloner plugin
+      3.1.1 for WordPress (CVE-2014-8606)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228730:
+    parent: 228730
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the indexisto 1.0.5 For WordPress
+      (CVE-2016-1000138)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228740:
+    parent: 228740
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the parsi-font 4.2.5 For WordPress
+      (CVE-2016-1000142)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  243400:
+    parent: 243400
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in wordpress plugin e-search v1.0
+      (CVE-2016-1000131)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  243410:
+    parent: 243410
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in WordPressplugin enhanced-tooltipglossary
+      v3.2.8 (CVE-2016-1000132)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228750:
+    parent: 228750
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in wordpress plugin forget-about-shortcode-buttons
+      v1.1.1 (CVE-2016-1000133)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228760:
+    parent: 228760
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the WordPress plugin page-layout-builder
+      v1.9.3 (CVE-2016-1000141)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228770:
+    parent: 228770
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the WordPress plugin hdw-tube v1.2
+      (CVE-2016-1000134)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228780:
+    parent: 228780
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the WordPress plugin new-year-firework
+      v1.1.9 (CVE-2016-1000140)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228790:
+    parent: 228790
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the wordpress plugin simpel-reserveren
+      v3.5.2 (CVE-2016-1000149)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228800:
+    parent: 228800
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the tera-charts 1.0 For WordPress
+      (CVE-2016-1000151)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228810:
+    parent: 228810
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the infusionsoft 1.5.11 for WordPress
+      (CVE-2016-1000139)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228820:
+    parent: 228820
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the photoxhibit v2.1.8 for WordPress
+      (CVE-2016-1000143)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228830:
+    parent: 228830
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the pondol-carousel plugin v1.0
+      for WordPress (CVE-2016-1000145)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228840:
+    parent: 228840
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the simplified-content v1.0.0 for
+      WordPress (CVE-2016-1000150)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228850:
+    parent: 228850
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the tidio-form v1.0 for WordPress
+      (CVE-2016-1000152)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228860:
+    parent: 228860
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the s3-video v0.983 for WordPress
+      (CVE-2016-1000148)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228870:
+    parent: 228870
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the defa-online-image-protector
+      v3.3 for WordPress (CVE-2016-1000129)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228880:
+    parent: 228880
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the photoxhibit 2.1.8 for WordPress
+      (CVE-2016-1000144)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228890:
+    parent: 228890
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the photoxhibit 2.1.8 for WordPress
+      (CVE-2016-1000144)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228900:
+    parent: 228900
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the whizz 1.0.7 for WordPress (CVE-2016-1000154)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228910:
+    parent: 228910
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the e-search 1.0 for WordPress
+      (CVE-2016-1000130)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228920:
+    parent: 228920
+    default_status: 1
+    description: 'COMODO WAF: Remote file upload vulnerability in fast-image-adder
+      v1.1 WordPress plugin (CVE-2015-1000001)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228930:
+    parent: 228930
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the recipes-writer v1.0.4 ,for
+      WordPress (CVE-2016-1000129)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228940:
+    parent: 228940
+    default_status: 1
+    description: 'COMODO WAF: Remote file download vulnerability in the candidate-application-form
+      v1.0 for WordPress (CVE-2016-1000005)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228950:
+    parent: 228950
+    default_status: 1
+    description: 'COMODO WAF: Remote file download vulnerability in the simple-image-manipulator
+      v1.0 for WordPress (CVE-2015-1000010)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228960:
+    parent: 228960
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the admin-font-editor v1.8 for
+      WordPress (CVE-2016-1000126)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228970:
+    parent: 228970
+    default_status: 1
+    description: 'COMODO WAF: Reflected XSS in WordPress plugin wpsolr-search-engine
+      v7.6 (CVE-2016-1000155)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228980:
+    parent: 228980
+    default_status: 1
+    description: 'COMODO WAF: Reflected XSS in WordPress plugin anti-plagiarism v3.60
+      (CVE-2016-1000128)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  228990:
+    parent: 228990
+    default_status: 1
+    description: 'COMODO WAF: Remote file download vulnerability in recent-backups
+      v0.7 plugin for WordPress (CVE-2015-1000006)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  229000:
+    parent: 229000
+    default_status: 1
+    description: 'COMODO WAF: Local File Inclusion Vulnerability in mypixs v0.3 wordpress
+      plugin for WordPress (CVE-2015-1000012)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  229010:
+    parent: 229010
+    default_status: 1
+    description: 'COMODO WAF: Reflected XSS in WordPress plugin tidio-gallery v1.1
+      (CVE-2016-1000153)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  229020:
+    parent: 229020
+    default_status: 1
+    description: 'COMODO WAF: Reflected XSS in WordPress plugin heat-trackr v1.0 (CVE-2016-1000136)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  229021:
+    parent: 229020
+    default_status: 1
+    description: ''
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  229030:
+    parent: 229030
+    default_status: 1
+    description: 'COMODO WAF: Reflected XSS in WordPress plugin hdw-tube v1.2 (CVE-2016-1000135)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  229040:
+    parent: 229040
+    default_status: 1
+    description: 'COMODO WAF: Reflected XSS in WordPress plugin hero-maps-pro v2.1.0
+      (CVE-2016-1000137)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  229050:
+    parent: 229050
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Role Scoper plugin version
+      1.3.66 For WordPress (CVE-2015-8353)'
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  229060:
+    parent: 229060
+    default_status: 1
+    description: Remote file download vulnerability in wptf-image-gallery v1.03 for
+      WordPress (CVE-2016-1000007)
+    group: WPPlugin
+    file: categories.conf
+    status: 1
+  229070:
+    parent: 229070
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the filedownload v1.4 for WordPress
+      (CVE-2015-1000002)'
     group: WPPlugin
     file: categories.conf
     status: 1
@@ -6388,21 +7626,6 @@ rules:
     group: Drupal
     file: categories.conf
     status: 1
-  221970:
-    parent: 221970
-    default_status: 1
-    description: 'COMODO WAF: Vulnerability in Ajax system in Drupal 7.x before 7.29
-      (CVE-2014-5022)'
-    group: Drupal
-    file: categories.conf
-    status: 1
-  221971:
-    parent: 221970
-    default_status: 1
-    description: ''
-    group: Drupal
-    file: categories.conf
-    status: 1
   231000:
     parent: 231000
     default_status: 1
@@ -6422,6 +7645,1324 @@ rules:
     parent: 231000
     default_status: 1
     description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231010:
+    parent: 231010
+    default_status: 1
+    description: 'COMODO WAF: Brute-Force Amplification in Drupal 6.x before 6.38
+      and 7.x before 7.43 (CVE-2016-3163)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231011:
+    parent: 231010
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  241790:
+    parent: 241790
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the CMS Updater module 7.x-1.x
+      before 7.x-1.3 for Drupal (CVE-2015-7307)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  241910:
+    parent: 241910
+    default_status: 1
+    description: 'COMODO WAF: The Prepopulate module 7.x-2.x before 7.x-2.1 for Drupal
+      allows remote attackers to modify the REQUEST superglobal array, and consequently
+      have unspecified impact, via a base64-encoded pp parameter (CVE-2016-3187)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  241860:
+    parent: 241860
+    default_status: 1
+    description: 'COMODO WAF: Open redirect vulnerability in Drupal 6.x before 6.38
+      (CVE-2016-3167)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231020:
+    parent: 231020
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Mass Contact module 6.x-1.x
+      before 6.x-1.6 and 7.x-1.x before 7.x-1.1 for Drupal (CVE-2015-6807)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231030:
+    parent: 231030
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in the Time Tracker module
+      7.x-1.x before 7.x-1.4 for Drupal (CVE-2015-6751)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231050:
+    parent: 231050
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the administration interface in
+      the Path Breadcrumbs module 7.x-3.x before 7.x-3.3 for Drupal (CVE-2015-6754)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231060:
+    parent: 231060
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Block Class module 7.x-2.x
+      before 7.x-2.2 for Drupal (CVE-2016-3144)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231070:
+    parent: 231070
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Camtasia Relay module 6.x-2.x
+      before 6.x-3.2 and 7.x-2.x before 7.x-1.3 for Drupal (CVE-2015-5487)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231080:
+    parent: 231080
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Smart Trim module 7.x-1.x before
+      7.x-1.5 for Drupal (CVE-2015-5489)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231090:
+    parent: 231090
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Migrate module 7.x-2.x before
+      7.x-2.8 for Drupal (CVE-2015-5514)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231100:
+    parent: 231100
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Webform Matrix Component module
+      7.x-4.12 for Drupal (CVE-2015-5494)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231111:
+    parent: 231110
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Mobile sliding menu module
+      7.x-2.x before 7.x-2.1 for Drupal (CVE-2015-5495)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231130:
+    parent: 231130
+    default_status: 1
+    description: 'COMODO WAF: Open redirect vulnerability in the Content Construction
+      Kit 6.x-2.9 for Drupal  (CVE-2015-5510)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231140:
+    parent: 231140
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Navigate module 6.x-1.1 for
+      Drupal (CVE-2015-5500)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231150:
+    parent: 231150
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the EntityBulkDelete module 7.x-1.0
+      for Drupal (CVE-2015-4386)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231151:
+    parent: 231150
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231152:
+    parent: 231150
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231160:
+    parent: 231160
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Invoice module 6.x-1.x before
+      6.x-1.2 and 7.x-1.x before 7.x-1.3 for Drupal (CVE-2015-4381)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231170:
+    parent: 231170
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Inline Entity Form module 7.x-1.x
+      before 7.x-1.6 for Drupal (CVE-2015-5507)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231180:
+    parent: 231180
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the MailChimp Signup submodule
+      in the MailChimp module 7.x-3.x before 7.x-3.3 for Drupal (CVE-2015-5488)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231190:
+    parent: 231190
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Shibboleth authentication module
+      6.x-4.x before 6.x-4.2 and 7.x-4.x before 7.x-4.2 for Drupal (CVE-2015-5513)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231200:
+    parent: 231200
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Web Links module 6.x-2.x before
+      6.x-2.6 and 7.x-1.x before 7.x-1.0 for Drupal (CVE-2015-5497)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231210:
+    parent: 231210
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Taxonews module 7.x-1.0 for Drupal
+      (CVE-2015-3369)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231220:
+    parent: 231220
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in MAYO theme 7.x-1.2 for Drupal (CVE-2014-8079)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231230:
+    parent: 231230
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Touch theme 7.x-1.7 for Drupal
+      (CVE-2014-4303)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231240:
+    parent: 231240
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Simple Subscription module 7.x-1.0
+      for Drupal (CVE-2015-4367)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231250:
+    parent: 231250
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Registration codes module 7.x-1.1
+      for Drupal (CVE-2015-4359)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231260:
+    parent: 231260
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Invoice module 6.x-1.x before
+      6.x-1.2 and 7.x-1.x before 7.x-1.3 for Drupal (CVE-2015-4382)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231261:
+    parent: 231260
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231262:
+    parent: 231260
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231263:
+    parent: 231260
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231264:
+    parent: 231260
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231265:
+    parent: 231260
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231266:
+    parent: 231260
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231267:
+    parent: 231260
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231268:
+    parent: 231260
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231270:
+    parent: 231270
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the admin view in the Search API
+      (search_api) module 7.x-1.x before 7.x-1.4 for Drupal (CVE-2013-2715)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231280:
+    parent: 231280
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Custom Search module 6.x-1.x
+      before 6.x-1.13 and 7.x-1.x before 7.x-1.15 for Drupal (CVE-2014-8745)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231290:
+    parent: 231290
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Site Banner module 7.x-4.0
+      for Drupal (CVE-2014-8376)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231300:
+    parent: 231300
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Petition module 6.x-1.x before
+      6.x-1.3 for Drupal (CVE-2015-4377)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231301:
+    parent: 231300
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231302:
+    parent: 231300
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  210310:
+    parent: 210310
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Profile2 Privacy module 7.x-1.x
+      before 7.x-1.5 for Drupal (CVE-2015-4376)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231310:
+    parent: 231310
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Webform module before 6.x-3.23,
+      7.x-3.x before 7.x-3.23, and 7.x-4.x before 7.x-4.5 for Drupal (CVE-2015-4374)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231320:
+    parent: 231320
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Image Title module before 7.x-1.1
+      for Drupal (CVE-2015-4372)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231331:
+    parent: 231330
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerabilities in Tribune module of Drupal-CMS
+      (CVE-2014-8705)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231341:
+    parent: 231340
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerabilities in Nivo Slider module of Drupal-CMS
+      (CVE-2014-8744)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231351:
+    parent: 231350
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerabilities in Google Doubleclick for Publishers
+      module of Drupal-CMS (CVE-2014-8748)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231360:
+    parent: 231360
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Site Documentation module before
+      6.x-1.5 and Taxonomy Accordion module for Drupal (CVE-2015-4370 & CVE-2015-4365)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231370:
+    parent: 231370
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the OG tabs module before 7.x-1.1
+      for Drupal (CVE-2015-4373)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231380:
+    parent: 231380
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Room Reservations module before
+      7.x-1.0 for Drupal (CVE-2015-3359)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231390:
+    parent: 231390
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Imagefield Info module 7.x-1.x
+      before 7.x-1.2 for Drupal (CVE-2015-4385)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  210360:
+    parent: 210360
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Webform module 7.x-4.x before
+      7.x-4.4 for Drupal (CVE-2015-4356)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231400:
+    parent: 231400
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Ajax Timeline module before
+      7.x-1.1 and Public Download Count module (pubdlcnt) 7.x-1.x-dev and earlier
+      for Drupal (CVE-2015-3392 & CVE-2015-3389)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231411:
+    parent: 231410
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerabilities in AddressField Tokens module of
+      Drupal-CMS (CVE-2014-3933)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231420:
+    parent: 231420
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Webform module 7.x-4.x before
+      7.x-4.4 for Drupal (CVE-2015-4356)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231430:
+    parent: 231430
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Ubercart Webform Integration
+      module 7.x-2.3 for Drupal (CVE-2015-4354)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231440:
+    parent: 231440
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Webform module before 6.x-3.22,
+      7.x-3.x before 7.x-3.22, and 7.x-4.x before 7.x-4.4 for Drupal (CVE-2015-4357)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231460:
+    parent: 231460
+    default_status: 1
+    description: 'COMODO WAF: Open redirect vulnerability in the Node basket module
+      for Drupal (CVE-2015-3383)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231470:
+    parent: 231470
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Node basket module for Drupal
+      (CVE-2015-3382)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231471:
+    parent: 231470
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231472:
+    parent: 231470
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  210370:
+    parent: 210370
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Node Access Product module
+      for Drupal (CVE-2015-3386)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231480:
+    parent: 231480
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerabilities in AddressField Tokens module of
+      Drupal-CMS (CVE-2014-5169)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231481:
+    parent: 231480
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  210430:
+    parent: 210430
+    default_status: 1
+    description: 'COMODO WAF: Open redirect vulnerability in the Node Invite module
+      before 6.x-2.5 for Drupal (CVE-2015-3371)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231490:
+    parent: 231490
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Node Invite module before 6.x-2.5
+      for Drupal (CVE-2015-3372)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231500:
+    parent: 231500
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Quizzler module before 7-x.1.16
+      for Drupal (CVE-2015-3376)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231510:
+    parent: 231510
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Node Invite module before
+      6.x-2.5 for Drupal (CVE-2015-3370)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231511:
+    parent: 231510
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231512:
+    parent: 231510
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231513:
+    parent: 231510
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231520:
+    parent: 231520
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Classified Ads module before
+      6.x-3.1 and 7.x-3.x before 7.x-3.1 and Term Merge module before 7.x-1.2 for
+      Drupal (CVE-2015-3368 & CVE-2015-3360)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231530:
+    parent: 231530
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Content Analysis module before
+      6.x-1.7 for Drupal (CVE-2015-3364)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231540:
+    parent: 231540
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the WikiWiki module before 6.x-1.2
+      for Drupal (CVE-2015-3346)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231550:
+    parent: 231550
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Field Display Label module
+      before 7.x-1.3 for Drupal (CVE-2015-3353)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231560:
+    parent: 231560
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Zen theme 7.x-3.2 for Drupal
+      (CVE-2014-7980)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231570:
+    parent: 231570
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Professional theme 7.x-2.03
+      for Drupal (CVE-2014-8076)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231580:
+    parent: 231580
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Wishlist module before 6.x-2.7
+      and 7.x-2.x before 7.x-2.7 for Drupal (CVE-2015-3357)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231590:
+    parent: 231590
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Course module 6.x-1.x before
+      6.x-1.2 and 7.x-1.x before 7.x-1.4 for Drupal (CVE-2015-3344)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231600:
+    parent: 231600
+    default_status: 1
+    description: 'COMODO WAF: XSS Vulnerability in NewsFlash theme of Drupal-CMS (CVE-2014-8077)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231610:
+    parent: 231610
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Wishlist module before 6.x-2.7
+      and 7.x-2.x before 7.x-2.7 for Drupal (CVE-2015-3354)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231620:
+    parent: 231620
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the GD Infinite Scroll module before
+      7.x-1.4 for Drupal (CVE-2015-1567)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231630:
+    parent: 231630
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Webform prepopulate block module
+      before 7.x-3.1 for Drupal (CVE-2015-1621)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231640:
+    parent: 231640
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the GD Infinite Scroll module
+      before 7.x-1.4 for Drupal (CVE-2015-1568)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231641:
+    parent: 231640
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231642:
+    parent: 231640
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231643:
+    parent: 231640
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231644:
+    parent: 231640
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231650:
+    parent: 231650
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Easy Social module before 7.x-2.11
+      for Drupal (CVE-2014-8319)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231660:
+    parent: 231660
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Webform module before 6.x-3.19
+      for Drupal (CVE-2013-2129)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231670:
+    parent: 231670
+    default_status: 1
+    description: 'COMODO WAF: Directory traversal vulnerability in the Avatar Uploader
+      module before 7.x-1.0-beta6 for Drupal (CVE-2014-9155)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231680:
+    parent: 231680
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Webform Validation module 7.x-1.3
+      for Drupal (CVE-2014-8076)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231690:
+    parent: 231690
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Webform Multiple File Upload
+      module 6.x-1.x before 6.x-1.3 and 7.x-1.x before 7.x-1.3 (CVE-2015-4379)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231691:
+    parent: 231690
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231692:
+    parent: 231690
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231700:
+    parent: 231700
+    default_status: 1
+    description: 'COMODO WAF: Open redirect vulnerability in the Perfecto module before
+      7.x-1.2 for Drupal (CVE-2015-3371)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231710:
+    parent: 231710
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Keyword Research module 6.x-1.x
+      before 6.x-1.2 for Drupal (CVE-2015-4396)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231711:
+    parent: 231710
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231712:
+    parent: 231710
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231713:
+    parent: 231710
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231720:
+    parent: 231720
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the XC NCIP Provider module in
+      the eXtensible Catalog (XC) Drupal Toolkit (CVE-2015-5508)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231721:
+    parent: 231720
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231722:
+    parent: 231720
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231730:
+    parent: 231730
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Tracking Code module 7.x-1.x
+      before 7.x-1.6 for Drupal (CVE-2015-4362)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231731:
+    parent: 231730
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231732:
+    parent: 231730
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231733:
+    parent: 231730
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231740:
+    parent: 231740
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Custom Sitemap module for
+      Drupal (CVE-2015-4353)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231741:
+    parent: 231740
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231742:
+    parent: 231740
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231743:
+    parent: 231740
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  242880:
+    parent: 242880
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in the Godwin''s Law module
+      before 7.x-1.1 for Drupal (CVE-2014-9499)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231750:
+    parent: 231750
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Spider Catalog module for
+      Drupal (CVE-2015-4350)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231751:
+    parent: 231750
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231752:
+    parent: 231750
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231753:
+    parent: 231750
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231754:
+    parent: 231750
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231760:
+    parent: 231760
+    default_status: 1
+    description: 'COMODO WAF: Arbitrary Files delete vulnerability in the Spider Video
+      Player module for Drupal (CVE-2015-4351)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231770:
+    parent: 231770
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Spider Video Player module
+      for Drupal (CVE-2015-4352)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231771:
+    parent: 231770
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231772:
+    parent: 231770
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231773:
+    parent: 231770
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231774:
+    parent: 231770
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231780:
+    parent: 231780
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Spider Contacts module for
+      Drupal (CVE-2015-4349)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231781:
+    parent: 231780
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231782:
+    parent: 231780
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231783:
+    parent: 231780
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231784:
+    parent: 231780
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231790:
+    parent: 231790
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Shibboleth Authentication
+      module before 6.x-4.1 and 7.x-4.x before 7.x-4.1 for Drupal (CVE-2015-3375)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231791:
+    parent: 231790
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231792:
+    parent: 231790
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231793:
+    parent: 231790
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231800:
+    parent: 231800
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Jammer module before 6.x-1.8
+      and 7.x-1.x before 7.x-1.4 for Drupal (CVE-2015-3352)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231801:
+    parent: 231800
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231802:
+    parent: 231800
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231803:
+    parent: 231800
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231804:
+    parent: 231800
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231810:
+    parent: 231810
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Corner module for Drupal (CVE-2015-3374)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231811:
+    parent: 231810
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231812:
+    parent: 231810
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231813:
+    parent: 231810
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231814:
+    parent: 231810
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231820:
+    parent: 231820
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Contact Form Fields module
+      before 6.x-2.3 for Drupal (CVE-2015-3363)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231821:
+    parent: 231820
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231822:
+    parent: 231820
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231823:
+    parent: 231820
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231824:
+    parent: 231820
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231870:
+    parent: 231870
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Patterns module before 7.x-2.2
+      for Drupal (CVE-2015-3367)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231871:
+    parent: 231870
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231872:
+    parent: 231870
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231873:
+    parent: 231870
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231874:
+    parent: 231870
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231880:
+    parent: 231880
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Log Watcher module before
+      6.x-1.2 for Drupal (CVE-2015-3351)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231881:
+    parent: 231880
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231882:
+    parent: 231880
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231883:
+    parent: 231880
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231890:
+    parent: 231890
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Spider Contacts module for
+      Drupal (CVE-2015-4348)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231900:
+    parent: 231900
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Htaccess module before 7.x-2.3
+      for Drupal (CVE-2015-3349)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231901:
+    parent: 231900
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231902:
+    parent: 231900
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231903:
+    parent: 231900
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231904:
+    parent: 231900
+    default_status: 1
+    description: ''
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231910:
+    parent: 231910
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in the Taxonomy Tools module
+      before 7.x-1.4 for Drupal (CVE-2015-3387)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231920:
+    parent: 231920
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Webform Invitation module 7.x-1.x
+      before 7.x-1.3 and 7.x-2.x before 7.x-2.4 for Drupal (CVE-2014-9498)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231930:
+    parent: 231930
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Panopoly Magic module before
+      7.x-1.17 for Drupal (CVE-2015-2086)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231940:
+    parent: 231940
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Rules Link module 7.x-1.x before
+      7.x-1.1 for Drupal (CVE-2014-9740)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231950:
+    parent: 231950
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Meta tags quick module 7.x-2.x
+      before 7.x-2.8 for Drupal (CVE-2014-9362)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  243140:
+    parent: 243140
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Boxes module 7.x-1.x before
+      7.x-1.1 for Drupal (CVE-2013-0259)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231960:
+    parent: 231960
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Anonymous Posting module 7.x-1.2
+      and 7.x-1.3 for Drupal (CVE-2014-1611)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231970:
+    parent: 231970
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Marketo MA module before 7.x-1.5
+      for Drupal (CVE-2014-8379)'
+    group: Drupal
+    file: categories.conf
+    status: 1
+  231980:
+    parent: 231980
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the User Ubercart Discount Coupons
+      module 6.x-1.x before 6.x-1.8 for Drupal (CVE-2015-4358)'
     group: Drupal
     file: categories.conf
     status: 1
@@ -6485,11 +9026,11 @@ rules:
   220120:
     parent: 220120
     default_status: 1
-    description: 'COMODO WAF: Vulnerability in Machform 2 (CVE-2013-4950)'
+    description: 'COMODO WAF: XSS vulnerability in Machform 2 (CVE-2013-4950)'
     group: OtherApps
     file: categories.conf
     status: 1
-  220121:
+  220122:
     parent: 220120
     default_status: 1
     description: ''
@@ -6506,7 +9047,7 @@ rules:
   220150:
     parent: 220150
     default_status: 1
-    description: 'COMODO WAF: Vulnerability in Ginkgo CMS (CVE-2013-5318)'
+    description: 'COMODO WAF: SQL injection Vulnerability in Ginkgo CMS (CVE-2013-5318)'
     group: OtherApps
     file: categories.conf
     status: 1
@@ -7217,7 +9758,8 @@ rules:
   221070:
     parent: 221070
     default_status: 1
-    description: 'COMODO WAF: Vulnerability inDotclear before 2.6.3 (CVE-2014-3783)'
+    description: 'COMODO WAF: SQL injection Vulnerability in the Dotclear before 2.6.3
+      (CVE-2014-3783)'
     group: OtherApps
     file: categories.conf
     status: 1
@@ -9611,6 +12153,14 @@ rules:
     group: OtherApps
     file: categories.conf
     status: 1
+  241690:
+    parent: 241690
+    default_status: 1
+    description: 'COMODO WAF: Open redirect vulnerability in Novius OS 5.0.1 (Elche)
+      (CVE-2015-5354)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
   241700:
     parent: 241700
     default_status: 1
@@ -9678,6 +12228,1920 @@ rules:
     default_status: 1
     description: 'COMODO WAF: XSS & SQL injection vulnerability in the Piwigo 2.6.3
       before & Piwigo 2.6.x and 2.7.x before 2.7.0beta2 (CVE-2014-3900 / CVE-2014-4649)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241780:
+    parent: 241780
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in Piwigo before 2.6.2 (CVE-2014-4614)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241781:
+    parent: 241780
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241782:
+    parent: 241780
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241783:
+    parent: 241780
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241800:
+    parent: 241800
+    default_status: 1
+    description: 'COMODO WAF: XSS Vulnerability in TYPO3 Versions 6.2.0 to 6.2.18
+      (CVE-2016-4056)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241810:
+    parent: 241810
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Kajona before 4.6.3 (CVE-2015-0917)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241820:
+    parent: 241820
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Serendipity before 2.0-rc2 (CVE-2014-9432)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241830:
+    parent: 241830
+    default_status: 1
+    description: 'COMODO WAF: XSS & SQL injection vulnerabilities in the TestLink
+      1.9.11 (CVE-2014-5308)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241831:
+    parent: 241830
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241840:
+    parent: 241840
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in Cacti 0.8.8f and earlier
+      (CVE-2015-8604)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241850:
+    parent: 241850
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Exponent CMS v2.3.0 (CVE-2014-6635)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241870:
+    parent: 241870
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in OSClass before 3.4.2
+      (CVE-2014-6280)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241880:
+    parent: 241880
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in e107 v2.0 alpha2 (CVE-2014-4734)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241890:
+    parent: 241890
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Textpattern CMS before 4.5.7 (CVE-2014-4737)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241900:
+    parent: 241900
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in the Piwigo before 2.5.5,
+      2.6.x before 2.6.4, and 2.7.x before 2.7.2 (CVE-2014-9115)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241920:
+    parent: 241920
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Open Web Analytics before 1.5.6
+      (CVE-2014-1456)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241940:
+    parent: 241940
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the concrete5 5.7.2.1, 5.7.2, and
+      earlier (CVE-2014-9526)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241941:
+    parent: 241940
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241942:
+    parent: 241940
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241950:
+    parent: 241950
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the MODX Revolution 2.3.2-pl (CVE-2014-8992)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241960:
+    parent: 241960
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in MODX Revolution 2.x before 2.2.15
+      (CVE-2014-8773 & CVE-2014-8775)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241961:
+    parent: 241960
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241962:
+    parent: 241960
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241970:
+    parent: 241970
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the MODX Revolution 2.3.1-pl and
+      earlier (CVE-2014-5451 & CVE-2014-2080)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241980:
+    parent: 241980
+    default_status: 1
+    description: 'COMODO WAF: XSS & SQL injection vulnerability in the MODX Revolution
+      before 2.2.14 (CVE-2014-2736)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241981:
+    parent: 241980
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  241990:
+    parent: 241990
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Revive Adserver before 3.0.6
+      (CVE-2014-8793)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242000:
+    parent: 242000
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the MODX Revolution 2.x before
+      2.2.15 (CVE-2014-8774)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242001:
+    parent: 242000
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242002:
+    parent: 242000
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242010:
+    parent: 242010
+    default_status: 1
+    description: 'COMODO WAF: Directory traversal vulnerability in OSClass before
+      3.4.2 (CVE-2014-6308)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242020:
+    parent: 242020
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in GetSimple CMS 3.3.1
+      (CVE-2014-1603)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242021:
+    parent: 242020
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242030:
+    parent: 242030
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the phpSound 1.0.5 (CVE-2014-8954)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242031:
+    parent: 242030
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242040:
+    parent: 242040
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Exponent CMS before 2.1.4 patch
+      6, 2.2.x before 2.2.3 patch 9, and 2.3.x before 2.3.1 patch 4 (CVE-2014-8690)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242050:
+    parent: 242050
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Yourls 1.7 (CVE-2014-8488)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242060:
+    parent: 242060
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in MediaWiki before 1.25.2 (CVE-2015-6729)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242070:
+    parent: 242070
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in b2evolution before 5.2.1 (CVE-2014-9599)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242080:
+    parent: 242080
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the In-Portal CMS 5.2.0 and earlier
+      (CVE-2014-8304)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242090:
+    parent: 242090
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Network Weathermap before 0.97b
+      (CVE-2013-2618)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242100:
+    parent: 242100
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in MySql Lite Administrator
+      beta-1 (CVE-2015-5064)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242101:
+    parent: 242100
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242110:
+    parent: 242110
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in Simple E-Document version
+      1.31 (CVE-2014-10020)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242120:
+    parent: 242120
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in MetalGenix GeniXCMS
+      before 0.0.2 (CVE-2015-2678)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242121:
+    parent: 242120
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242130:
+    parent: 242130
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Codiad v2.0.7 (CVE-2013-7257)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242140:
+    parent: 242140
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the osTicket before 1.9.2 (CVE-2014-4744)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242141:
+    parent: 242140
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242142:
+    parent: 242140
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242160:
+    parent: 242160
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Forma Lms before 1.2.1 p01
+      (CVE-2014-5257)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242161:
+    parent: 242160
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242181:
+    parent: 242180
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Lunar CMS before 3.3-3 (CVE-2014-4718)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242182:
+    parent: 242180
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242183:
+    parent: 242180
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242184:
+    parent: 242180
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242185:
+    parent: 242180
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242186:
+    parent: 242180
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242190:
+    parent: 242190
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in AuraCMS before v3.0 (CVE-2014-3974)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242200:
+    parent: 242200
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in WeBid 1.1.1 (CVE-2014-5101)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242201:
+    parent: 242200
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242210:
+    parent: 242210
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in ImpressCMS 1.3.6.1 (CVE-2014-4036)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242220:
+    parent: 242220
+    default_status: 1
+    description: 'COMODO WAF: SQL Injection vulnerability in the Bacula-Web 5.2.10
+      (CVE-2014-8295)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242230:
+    parent: 242230
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Pligg CMS 2.0.2 (CVE-2015-6655)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242231:
+    parent: 242230
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242232:
+    parent: 242230
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242240:
+    parent: 242240
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the ClickHeat 1.14 (CVE-2015-4659)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242241:
+    parent: 242240
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242242:
+    parent: 242240
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242243:
+    parent: 242240
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242250:
+    parent: 242250
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the MantisBT 1.2.12 (CVE-2013-5916)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242260:
+    parent: 242260
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in gpEasy-CMS 3.0.1 (CVE-2013-0807)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242270:
+    parent: 242270
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in GetSimple CMS 3.1.2
+      and 3.2.3 (CVE-2013-7243)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242271:
+    parent: 242270
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242280:
+    parent: 242280
+    default_status: 1
+    description: 'COMODO WAF: Absolute path traversal vulnerability in AuraCMS 3.0
+      (CVE-2014-3975)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242290:
+    parent: 242290
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the MetalGenix GeniXCMS before
+      0.0.2 (CVE-2015-2680)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242291:
+    parent: 242290
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242292:
+    parent: 242290
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242293:
+    parent: 242290
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242300:
+    parent: 242300
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Ilch CMS (CVE-2015-2680)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242301:
+    parent: 242300
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242302:
+    parent: 242300
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242303:
+    parent: 242300
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242310:
+    parent: 242310
+    default_status: 1
+    description: 'COMODO WAF: XSS injection vulnerability in the Moodle through 2.6.11,
+      2.7.x before 2.7.13, 2.8.x before 2.8.11, 2.9.x before 2.9.5, and 3.0.x before
+      3.0.3 (CVE-2016-2153)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242320:
+    parent: 242320
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Epignosis eFront 3.6.14.4 (CVE-2014-4033)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242330:
+    parent: 242330
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in SimpleRisk before 20130916-001
+      (CVE-2013-5749)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242340:
+    parent: 242340
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in ClanSphere 2011.4 (CVE-2014-100010)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242350:
+    parent: 242350
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in phpRechnung before 1.6.5
+      (CVE-2015-5648)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242360:
+    parent: 242360
+    default_status: 1
+    description: 'COMODO WAF: XSS & SQL injection vulnerabilities in the TeamPass
+      before 2.1.20 (CVE-2014-3773)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242361:
+    parent: 242360
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242370:
+    parent: 242370
+    default_status: 1
+    description: 'COMODO WAF: XSS Vulnerability in TomatoCart 1.1.8.6.1 (CVE-2014-3830)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242380:
+    parent: 242380
+    default_status: 1
+    description: 'COMODO WAF: SQL Injection vulnerability in TomatoCart 1.1.8.6.1
+      (CVE-2014-3978)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242390:
+    parent: 242390
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Absolut Engine 1.73 (CVE-2014-9434)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242400:
+    parent: 242400
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerabilities in the MyBB (aka MyBulletinBoard)
+      before 1.8.4 (CVE-2015-2149 & CVE-2015-2333)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242401:
+    parent: 242400
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242402:
+    parent: 242400
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242403:
+    parent: 242400
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242404:
+    parent: 242400
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242405:
+    parent: 242400
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242410:
+    parent: 242410
+    default_status: 1
+    description: 'COMODO WAF: XSS injection vulnerability in the Moodle through 2.4.11,
+      2.5.x before 2.5.9, 2.6.x before 2.6.6, and 2.7.x before 2.7.3 (CVE-2014-7830)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242420:
+    parent: 242420
+    default_status: 1
+    description: 'COMODO WAF: File Upload Vulnerability in the PivotX before 2.3.11
+      (CVE-2014-8363)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242430:
+    parent: 242430
+    default_status: 1
+    description: 'COMODO WAF: SQL Injection vulnerability in the MyBB 1.8.1 (CVE-2014-9240)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242440:
+    parent: 242440
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the MyBB 1.8.1 (CVE-2014-9241)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242441:
+    parent: 242440
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242442:
+    parent: 242440
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242443:
+    parent: 242440
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242450:
+    parent: 242450
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the SyntaxHighlight_Geshi extension
+      and MediaWiki 1.25.1 (CVE-2015-6734)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242480:
+    parent: 242480
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the SemanticForms extension for
+      MediaWiki 1.25.1 (CVE-2015-6732)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242481:
+    parent: 242480
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242482:
+    parent: 242480
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242490:
+    parent: 242490
+    default_status: 1
+    description: 'COMODO WAF: Information Disclosure in phpMyAdmin 4.0.x before 4.0.10.13,
+      4.4.x before 4.4.15.3, and 4.5.x before 4.5.4 (CVE-2016-2038)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242500:
+    parent: 242500
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the DataTables plugin 1.10.8 and
+      earlier for jQuery (CVE-2015-6584)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242510:
+    parent: 242510
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the SemanticForms extension for
+      MediaWiki 1.25.1 (CVE-2015-6731)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242511:
+    parent: 242510
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242512:
+    parent: 242510
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242530:
+    parent: 242530
+    default_status: 1
+    description: 'COMODO WAF: Denial of Service in Symfony before 2.3.41, 2.7.x before
+      2.7.13, 2.8.x before 2.8.6, and 3.0.x before 3.0.6 (CVE-2016-4423)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242540:
+    parent: 242540
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in MantisBT before 1.2.18 (CVE-2014-9281)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242550:
+    parent: 242550
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in Milw0rm Clone Script
+      1.0 (CVE-2015-4137)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242560:
+    parent: 242560
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in MediaWiki before 1.23.10, 1.24.x
+      before 1.24.3, and 1.25.x before 1.25.2 (CVE-2015-6730)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242580:
+    parent: 242580
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in MantisBT before 1.2.16
+      (CVE-2014-2238)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242590:
+    parent: 242590
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in OpenEMR 4.1.1 (CVE-2013-4620)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242600:
+    parent: 242600
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Cacti 0.8.8b (CVE-2014-5025)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242610:
+    parent: 242610
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in Cacti 0.8.8b (CVE-2014-5026)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242621:
+    parent: 242620
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Omeka before 2.2.1 (CVE-2014-5100)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242622:
+    parent: 242620
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242623:
+    parent: 242620
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242624:
+    parent: 242620
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242625:
+    parent: 242620
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242626:
+    parent: 242620
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242627:
+    parent: 242620
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242630:
+    parent: 242630
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in MantisBT in 1.3.x before
+      1.3.0-rc2 and 1.2.x before 1.2.19 (CVE-2016-5364)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242631:
+    parent: 242630
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242640:
+    parent: 242640
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in CMS Made Simple 1.11.9 (CVE-2013-3929)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242650:
+    parent: 242650
+    default_status: 1
+    description: 'COMODO WAF: Multiple SQL injection vulnerabilities in OpenEMR 4.1.1
+      (CVE-2013-4619)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242660:
+    parent: 242660
+    default_status: 1
+    description: 'COMODO WAF: Multiple SQL injection vulnerabilities in Absolut Engine
+      1.73 (CVE-2014-9435)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242661:
+    parent: 242660
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242662:
+    parent: 242660
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242663:
+    parent: 242660
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242670:
+    parent: 242670
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in MantisBT 1.2.12 (CVE-2013-1810)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242680:
+    parent: 242680
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in the Magento Mass Importer
+      (CVE-2015-2068)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242681:
+    parent: 242680
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  210320:
+    parent: 210320
+    default_status: 1
+    description: 'COMODO WAF: Directory traversal vulnerability in Magento Mass Importer
+      (CVE-2015-2067)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242700:
+    parent: 242700
+    default_status: 1
+    description: 'COMODO WAF: Directory traversal vulnerability in Codoforum 2.5.1
+      (CVE-2014-9261)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242710:
+    parent: 242710
+    default_status: 1
+    description: 'COMODO WAF: Directory traversal vulnerability in Exponent CMS (CVE-2013-3295)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242720:
+    parent: 242720
+    default_status: 1
+    description: 'COMODO WAF: XSS in the Open Source Point Of Sale 2.3.1 (CVE-2015-0299)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242730:
+    parent: 242730
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in ownCloud before 4.5.7 (CVE-2013-0307)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242740:
+    parent: 242740
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in webtrees before 1.5.2
+      (CVE-2014-100006)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242750:
+    parent: 242750
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in MantisBT 1.0.0 through 1.2.15 (CVE-2013-4460)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242760:
+    parent: 242760
+    default_status: 1
+    description: 'COMODO WAF: SQL Injection vulnerability in the Cacti 0.8.6e (CVE-2015-0916)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242770:
+    parent: 242770
+    default_status: 1
+    description: 'COMODO WAF: SQL Injection vulnerability in the TickFa 1.x (CVE-2015-4676)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242780:
+    parent: 242780
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerabilities in phpMyAdmin 4.2.x before 4.2.4
+      (CVE-2014-4348)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242800:
+    parent: 242800
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in OrangeHRM before 3.1.2 (CVE-2014-100021)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242810:
+    parent: 242810
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in PHP Address Book 8.2.5 (CVE-2013-1749)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242820:
+    parent: 242820
+    default_status: 1
+    description: 'COMODO WAF: SQL Injection Vulnerability in TYPO3 6.2.25 Extension
+      Akronymmanager (CVE-2015-2803)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242830:
+    parent: 242830
+    default_status: 1
+    description: 'COMODO WAF: Multiple SQL injection vulnerabilities in OpenEMR 4.1.2
+      (CVE-2014-5462)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242831:
+    parent: 242830
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242832:
+    parent: 242830
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242833:
+    parent: 242830
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242840:
+    parent: 242840
+    default_status: 1
+    description: 'COMODO WAF: Multiple SQL injection vulnerabilities in Exponent CMS
+      before 2.2.0 release candidate 1 (CVE-2013-3294)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242850:
+    parent: 242850
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in the Maestro module 7.x-1.x
+      before 7.x-1.4 for Drupal (CVE-2014-8743)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242860:
+    parent: 242860
+    default_status: 1
+    description: 'COMODO WAF: Denial of Service in phpMyAdmin 4.0.x before 4.0.10.16,
+      4.4.x before 4.4.15.7, and 4.6.x before 4.6.3 (CVE-2016-5706)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242870:
+    parent: 242870
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the X2Engine X2CRM before 5.2
+      (CVE-2015-5075)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242871:
+    parent: 242870
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242872:
+    parent: 242870
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  215020:
+    parent: 215020
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS ulnerabilities in Moodle-LMS through 2.6.11,
+      2.7.x before 2.7.13, 2.8.x before 2.8.11, 2.9.x before 2.9.5, and 3.0.x before
+      3.0.3 (CVE-2016-2152)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242890:
+    parent: 242890
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Horde Groupware before 5.2.12 and
+      Horde Groupware Webmail Edition before 5.2.12 (CVE-2016-2228)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242900:
+    parent: 242900
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in BigTree CMS before 4.0 RC2 (CVE-2013-4880)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242910:
+    parent: 242910
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in ownCloud before 4.5.7
+      (CVE-2013-0297)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242920:
+    parent: 242920
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Geeklog before 2.0.0rc2 (CVE-2013-1470)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242930:
+    parent: 242930
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Zikula Application Framework before
+      1.3.6 (CVE-2013-6168)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242940:
+    parent: 242940
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in X2Engine X2CRM before 3.5 (CVE-2013-5693)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242950:
+    parent: 242950
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the School Administration module
+      7.x-1.x before 7.x-1.8 for Drupal (CVE-2014-9505)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242960:
+    parent: 242960
+    default_status: 1
+    description: 'COMODO WAF: XSS in the iTop 2.1.0-2127 (CVE-2015-6544)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242970:
+    parent: 242970
+    default_status: 1
+    description: 'COMODO WAF: Multiple open redirect vulnerabilities in Web Reference
+      Database (aka refbase) through 0.9.6 and bleeding-edge before 2015-01-08 (CVE-2015-6012)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242980:
+    parent: 242980
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Poll Chart Block module 7.x-1.x
+      before 7.x-1.2 for Drupal (CVE-2014-9501)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242990:
+    parent: 242990
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in Moodle through 2.6.11, 2.7.x before
+      2.7.13, 2.8.x before 2.8.11, 2.9.x before 2.9.5, and 3.0.x before 3.0.3 (CVE-2016-2157)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242991:
+    parent: 242990
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242992:
+    parent: 242990
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242993:
+    parent: 242990
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242994:
+    parent: 242990
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242995:
+    parent: 242990
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  242996:
+    parent: 242990
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  210440:
+    parent: 210440
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Search module in Kajona 4.4
+      (CVE-2014-4743)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243000:
+    parent: 243000
+    default_status: 1
+    description: 'COMODO WAF: Directory traversal vulnerability in QuiXplorer before
+      2.5.5 (CVE-2013-1641)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243010:
+    parent: 243010
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Apache Archiva 1.3.9 and earlier
+      (CVE-2016-5005)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243020:
+    parent: 243020
+    default_status: 1
+    description: 'COMODO WAF: XSS Vulnerability in the ATutor 2.2 (CVE-2015-7711)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243040:
+    parent: 243040
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in IT Operations Portal (iTop) before
+      1.2 (CVE-2013-0805)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243050:
+    parent: 243050
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Dotclear v2.9.1 (CVE-2016-6523)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243060:
+    parent: 243060
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Omeka before 2.2.1 (CVE-2014-5100)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243070:
+    parent: 243070
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Dotclear before 2.6.4 (CVE-2014-5316)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243080:
+    parent: 243080
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Lunar CMS before 3.3-3 (CVE-2014-4718)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  240001:
+    parent: 240000
+    default_status: 1
+    description: 'COMODO WAF: Directory traversal vulnerability in X2Engine X2CRM
+      before 3.5 (CVE-2013-5692)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243100:
+    parent: 243100
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in osCommerce Online Merchant
+      before 2.3.3.4 (CVE-2014-10033)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243110:
+    parent: 243110
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in phpMyAdmin 4.0.x before
+      4.0.10.16, 4.4.x before 4.4.15.7, and 4.6.x before 4.6.3 (CVE-2016-5733)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243090:
+    parent: 243090
+    default_status: 1
+    description: 'COMODO WAF: PHP code injection vulnerability in ATUTOR version 2.2
+      and prior versions (CVE-2015-7712)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243120:
+    parent: 243120
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in Collabtive before 1.2
+      (CVE-2013-6872)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243130:
+    parent: 243130
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in b2evolution before 4.1.7
+      (CVE-2013-2945)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243170:
+    parent: 243170
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in EspoCRM before 2.6.0 (CVE-2014-7987)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243150:
+    parent: 243150
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in FlatPress 1.0.2 (CVE-2014-100036)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243160:
+    parent: 243160
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in PHP-Fusion before 7.02.06
+      (CVE-2013-1804)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243161:
+    parent: 243160
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243162:
+    parent: 243160
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243163:
+    parent: 243160
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243164:
+    parent: 243160
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243165:
+    parent: 243160
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243166:
+    parent: 243160
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243167:
+    parent: 243160
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243168:
+    parent: 243160
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  210450:
+    parent: 210450
+    default_status: 1
+    description: 'COMODO WAF: Multiple SQL injection vulnerabilities in ol-commerce
+      2.1.1 (CVE-2014-5104)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  210451:
+    parent: 210450
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  210452:
+    parent: 210450
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  210453:
+    parent: 210450
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243180:
+    parent: 243180
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities and Information Disclosure
+      in Apache ActiveMQ 5.x before 5.11.4, 5.12.x before 5.12.3, and 5.13.x before
+      5.13.2 (CVE-2016-0782)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243181:
+    parent: 243180
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243190:
+    parent: 243190
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the User Relationships module 6.x-1.x
+      before 6.x-1.4 and 7.x-1.x before 7.x-1.0-alpha5 for Drupal (CVE-2013-0225)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243200:
+    parent: 243200
+    default_status: 1
+    description: 'COMODO WAF: Multiple XSS vulnerabilities in Gnew 2013.1 (CVE-2013-7368)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243201:
+    parent: 243200
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243202:
+    parent: 243200
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243203:
+    parent: 243200
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243210:
+    parent: 243210
+    default_status: 1
+    description: 'COMODO WAF: XSS Vulnerability in the ClipBucket 8.2.1'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243220:
+    parent: 243220
+    default_status: 1
+    description: 'COMODO WAF: Open redirect vulnerability in the Coppermine Photo
+      Gallery before 1.5.36 (CVE-2015-3922)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243230:
+    parent: 243230
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Coppermine Photo Gallery before
+      1.5.36 (CVE-2015-3921)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243240:
+    parent: 243240
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in PHPKIT 1.6.6 (CVE-2015-1052)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243250:
+    parent: 243250
+    default_status: 1
+    description: 'COMODO WAF: Multiple SQL injection vulnerabilities in Gnew 2013.1
+      (CVE-2013-7349)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243251:
+    parent: 243250
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243252:
+    parent: 243250
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243260:
+    parent: 243260
+    default_status: 1
+    description: 'COMODO WAF: SSRF/XSPA Vulnerability in Dotclear 2.9.1'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243270:
+    parent: 243270
+    default_status: 1
+    description: 'COMODO WAF: Path traversal vulnerability in Exponent CMS 2.3.9 (CVE-2016-7452)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243280:
+    parent: 243280
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in Exponent CMS 2.3.9 (CVE-2016-7453)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243290:
+    parent: 243290
+    default_status: 1
+    description: 'COMODO WAF: SQL Injection vulnerability in ReadyDesk 9.1 (CVE-2016-5048)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243300:
+    parent: 243300
+    default_status: 1
+    description: 'COMODO WAF: Directory traversal vulnerability in ReadyDesk 9.1 (CVE-2016-5049)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243310:
+    parent: 243310
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the PHPVibe before 4.21 (CVE-2015-5399)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243320:
+    parent: 243320
+    default_status: 1
+    description: 'COMODO WAF: Information disclosure vulnerability in Cloud Foundry
+      PHP Buildpack (aka php-buildpack) before 4.3.18 and PHP Buildpack Cf-release
+      before 242, as used in Pivotal Cloud Foundry (PCF) Elastic Runtime before 1.6.38
+      and 1.7.x before 1.7.19 and other products (CVE-2016-6639)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243330:
+    parent: 243330
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in ownCloud Server before 9.0.4 and
+      Nextcloud Server before 9.0.52 (CVE-2016-7419)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243340:
+    parent: 243340
+    default_status: 1
+    description: 'COMODO WAF: CSRF vulnerability in the Revive Adserver before 3.2.2
+      (CVE-2015-7366)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243341:
+    parent: 243340
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243342:
+    parent: 243340
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243350:
+    parent: 243350
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in AlienVault OSSIM before 5.3 and
+      USM before 5.3 (CVE-2016-6913)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243360:
+    parent: 243360
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in the Linear Case module 6.x-1.x
+      before 6.x-1.3 for Drupal (CVE-2015-4380)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243380:
+    parent: 243380
+    default_status: 1
+    description: 'COMODO WAF: Arbitrary Code Execution in Exponent CMS v2.3.9 (CVE-2016-7565)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243390:
+    parent: 243390
+    default_status: 1
+    description: 'COMODO WAF: Remote Code Execution vulnerability in Exponent CMS
+      v2.3.9 (CVE-2016-7790)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243420:
+    parent: 243420
+    default_status: 1
+    description: 'COMODO WAF: Information disclosure vulnerability in Eclipse Jetty
+      before 9.2.9.v20150224 (CVE-2015-2080)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243430:
+    parent: 243430
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in wordpress plugin ajax-random-post
+      v2.00 (CVE-2016-1000127)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243440:
+    parent: 243440
+    default_status: 1
+    description: 'COMODO WAF: SQL Injection in Exponent CMS 2.4.0 (CVE-2016-9272)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243450:
+    parent: 243450
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in the Exponent CMS v2.4.0
+      or older (CVE-2016-9288)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243460:
+    parent: 243460
+    default_status: 1
+    description: 'COMODO WAF: Multiple vulnerabilities in X2Engine X2CRM before 5.0.9
+      (CVE-2015-5076)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243461:
+    parent: 243460
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243462:
+    parent: 243460
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243470:
+    parent: 243470
+    default_status: 1
+    description: 'COMODO WAF: CRLF injection vulnerability in dotCMS before 3.3.2
+      (CVE-2016-4803)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243480:
+    parent: 243480
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in Piwigo 2.8.3 (CVE-2016-9751)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243490:
+    parent: 243490
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in the Exponent CMS v2.4.0
+      or older (CVE-2016-9481)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243500:
+    parent: 243500
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in SPIP 3.1.3(CVE-2016-9152)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243510:
+    parent: 243510
+    default_status: 1
+    description: 'COMODO WAF: Denial of Service in RabbitMQ before 3.6.1 (CVE-2015-8786)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243511:
+    parent: 243510
+    default_status: 1
+    description: ''
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243520:
+    parent: 243520
+    default_status: 1
+    description: COMODO WAF:SQL injection vulnerability in the Exponent CMS v2.4.0
+      or older (CVE-2016-9283)
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243530:
+    parent: 243530
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in the Exponent CMS v2.4.0
+      or older (CVE-2016-9242)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243540:
+    parent: 243540
+    default_status: 1
+    description: 'COMODO WAF: XSS vulnerability in SPIP 3.1.x (CVE-2016-9998)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243560:
+    parent: 243560
+    default_status: 1
+    description: 'COMODO WAF: SQL injection vulnerability in the Exponent CMS v2.4.0
+      or older (CVE-2016-9184)'
+    group: OtherApps
+    file: categories.conf
+    status: 1
+  243561:
+    parent: 243560
+    default_status: 1
+    description: ''
     group: OtherApps
     file: categories.conf
     status: 1
@@ -10401,6 +14865,10 @@ rules:
 children:
   210100:
     210101: 0
+  210480:
+    210481: 0
+  210490:
+    210491: 0
   210800:
     210801: 0
   210830:
@@ -10430,30 +14898,30 @@ children:
     210231: 0
   217500:
     217501: 0
-  222390:
-    222391: 0
+  220030:
+    220031: 0
   220460:
     220461: 0
-  220680:
-    220681: 0
   220730:
     220731: 0
   240030:
     240031: 0
     240032: 0
-  240010:
-    240011: 0
   222370:
     222371: 0
   222400:
     222401: 0
     222402: 0
+  222440:
+    222441: 0
   240020:
-    240021: 0
+    240022: 0
   225010:
     225011: 0
   225030:
     225031: 0
+  225140:
+    225141: 0
   220210:
     220211: 0
     220212: 0
@@ -10509,9 +14977,6 @@ children:
   222360:
     222361: 0
     222362: 0
-  226250:
-    226251: 0
-    226252: 0
   226260:
     226261: 0
   226270:
@@ -10519,23 +14984,16 @@ children:
   226320:
     226321: 0
     226322: 0
-    226323: 0
-    226324: 0
-    226325: 0
-    226326: 0
   226360:
     226361: 0
   226390:
     226391: 0
-    226392: 0
   226410:
     226411: 0
   226420:
     226421: 0
-    226422: 0
   226430:
     226431: 0
-    226432: 0
   226470:
     226471: 0
     226472: 0
@@ -10553,7 +15011,6 @@ children:
     226532: 0
   226560:
     226561: 0
-    226562: 0
   226580:
     226581: 0
   226610:
@@ -10563,7 +15020,6 @@ children:
     226632: 0
   226640:
     226641: 0
-    226642: 0
   226650:
     226651: 0
   226670:
@@ -10575,7 +15031,6 @@ children:
     226692: 0
   226740:
     226741: 0
-    226742: 0
   226790:
     226791: 0
   226800:
@@ -10586,43 +15041,34 @@ children:
     226932: 0
     226933: 0
     226934: 0
-  226940:
-    226941: 0
-  226990:
-    226991: 0
   227120:
     227121: 0
     227122: 0
     227123: 0
   227170:
     227171: 0
-  227250:
-    227251: 0
-    227252: 0
+  227260:
+    227261: 0
   227290:
     227291: 0
   227310:
     227311: 0
-    227312: 0
   227510:
     227511: 0
   227530:
     227531: 0
     227532: 0
-    227533: 0
   227540:
     227541: 0
   227550:
     227551: 0
     227552: 0
-    227553: 0
   227560:
     227561: 0
     227562: 0
     227563: 0
   210150:
     210151: 0
-    210152: 0
   227610:
     227611: 0
   227630:
@@ -10631,53 +15077,148 @@ children:
     227671: 0
   227700:
     227701: 0
-    227702: 0
   227720:
     227721: 0
-    227722: 0
   227730:
     227731: 0
-    227732: 0
   227740:
     227741: 0
-    227742: 0
   227750:
     227751: 0
-    227752: 0
   227820:
     227821: 0
-    227822: 0
   227860:
     227861: 0
-    227862: 0
   227880:
     227881: 0
-    227882: 0
   227920:
     227921: 0
-    227922: 0
   227950:
     227951: 0
   227960:
     227961: 0
   227970:
     227971: 0
-    227972: 0
   228120:
     228121: 0
-    228122: 0
-    228123: 0
+  229020:
+    229021: 0
   241530:
     241531: 0
-  221970:
-    221971: 0
   231000:
     231001: 0
     231002: 0
+  231010:
+    231011: 0
+  231110:
+    231111: 0
+  231150:
+    231151: 0
+    231152: 0
+  231260:
+    231261: 0
+    231262: 0
+    231263: 0
+    231264: 0
+    231265: 0
+    231266: 0
+    231267: 0
+    231268: 0
+  231300:
+    231301: 0
+    231302: 0
+  231330:
+    231331: 0
+  231340:
+    231341: 0
+  231350:
+    231351: 0
+  231410:
+    231411: 0
+  231470:
+    231471: 0
+    231472: 0
+  231480:
+    231481: 0
+  231510:
+    231511: 0
+    231512: 0
+    231513: 0
+  231640:
+    231641: 0
+    231642: 0
+    231643: 0
+    231644: 0
+  231690:
+    231691: 0
+    231692: 0
+  231710:
+    231711: 0
+    231712: 0
+    231713: 0
+  231720:
+    231721: 0
+    231722: 0
+  231730:
+    231731: 0
+    231732: 0
+    231733: 0
+  231740:
+    231741: 0
+    231742: 0
+    231743: 0
+  231750:
+    231751: 0
+    231752: 0
+    231753: 0
+    231754: 0
+  231770:
+    231771: 0
+    231772: 0
+    231773: 0
+    231774: 0
+  231780:
+    231781: 0
+    231782: 0
+    231783: 0
+    231784: 0
+  231790:
+    231791: 0
+    231792: 0
+    231793: 0
+  231800:
+    231801: 0
+    231802: 0
+    231803: 0
+    231804: 0
+  231810:
+    231811: 0
+    231812: 0
+    231813: 0
+    231814: 0
+  231820:
+    231821: 0
+    231822: 0
+    231823: 0
+    231824: 0
+  231870:
+    231871: 0
+    231872: 0
+    231873: 0
+    231874: 0
+  231880:
+    231881: 0
+    231882: 0
+    231883: 0
+  231900:
+    231901: 0
+    231902: 0
+    231903: 0
+    231904: 0
   220110:
     220111: 0
   220120:
-    220121: 0
+    220122: 0
   220180:
     220181: 0
     220182: 0
@@ -10939,6 +15480,144 @@ children:
     241682: 0
   241760:
     241761: 0
+  241780:
+    241781: 0
+    241782: 0
+    241783: 0
+  241830:
+    241831: 0
+  241940:
+    241941: 0
+    241942: 0
+  241960:
+    241961: 0
+    241962: 0
+  241980:
+    241981: 0
+  242000:
+    242001: 0
+    242002: 0
+  242020:
+    242021: 0
+  242030:
+    242031: 0
+  242100:
+    242101: 0
+  242120:
+    242121: 0
+  242140:
+    242141: 0
+    242142: 0
+  242160:
+    242161: 0
+  242180:
+    242181: 0
+    242182: 0
+    242183: 0
+    242184: 0
+    242185: 0
+    242186: 0
+  242200:
+    242201: 0
+  242230:
+    242231: 0
+    242232: 0
+  242240:
+    242241: 0
+    242242: 0
+    242243: 0
+  242270:
+    242271: 0
+  242290:
+    242291: 0
+    242292: 0
+    242293: 0
+  242300:
+    242301: 0
+    242302: 0
+    242303: 0
+  242360:
+    242361: 0
+  242400:
+    242401: 0
+    242402: 0
+    242403: 0
+    242404: 0
+    242405: 0
+  242440:
+    242441: 0
+    242442: 0
+    242443: 0
+  242480:
+    242481: 0
+    242482: 0
+  242510:
+    242511: 0
+    242512: 0
+  242620:
+    242621: 0
+    242622: 0
+    242623: 0
+    242624: 0
+    242625: 0
+    242626: 0
+    242627: 0
+  242630:
+    242631: 0
+  242660:
+    242661: 0
+    242662: 0
+    242663: 0
+  242680:
+    242681: 0
+  242830:
+    242831: 0
+    242832: 0
+    242833: 0
+  242870:
+    242871: 0
+    242872: 0
+  242990:
+    242991: 0
+    242992: 0
+    242993: 0
+    242994: 0
+    242995: 0
+    242996: 0
+  240000:
+    240001: 0
+  243160:
+    243161: 0
+    243162: 0
+    243163: 0
+    243164: 0
+    243165: 0
+    243166: 0
+    243167: 0
+    243168: 0
+  210450:
+    210451: 0
+    210452: 0
+    210453: 0
+  243180:
+    243181: 0
+  243200:
+    243201: 0
+    243202: 0
+    243203: 0
+  243250:
+    243251: 0
+    243252: 0
+  243340:
+    243341: 0
+    243342: 0
+  243460:
+    243461: 0
+    243462: 0
+  243510:
+    243511: 0
+  243560:
+    243561: 0
   218600:
     218601: 0
     218602: 0
